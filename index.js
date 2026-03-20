@@ -5,8 +5,11 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 // trasy
-import todoRoutes from "./routes/todo.route.js";
+import todoRoutes from "./routes/task.route.js";
 import path from "path";
+
+import { connectDB } from "./config/db.js"; // jeśli masz connectDB
+
 
 dotenv.config();
 
@@ -19,6 +22,8 @@ const initServer = (port) => {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   app.use(cookieParser());
   app.use(cors());
+
+  connectDB().catch(err => console.error("Mongo connect error:", err));
 
   // trasy
   app.use(prefixApi + "todos", todoRoutes);
