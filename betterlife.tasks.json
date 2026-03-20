@@ -1,0 +1,324 @@
+[{
+  "_id": {
+    "$oid": "69bdbd8665a375d33702fe44"
+  },
+  "uuid": "1774042502562",
+  "title": "Betterlife app",
+  "priority": 1,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T21:35:02.567Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T21:35:02.567Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdbd9d65a375d33702fe47"
+  },
+  "uuid": "1774042525986",
+  "title": "Todos",
+  "priority": 1,
+  "deadline": null,
+  "done": false,
+  "parentId": "1774042502562",
+  "createdAt": {
+    "$date": "2026-03-20T21:35:25.987Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T21:59:08.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdbdc265a375d33702fe4a"
+  },
+  "uuid": "1774042562912",
+  "title": "Sortowanie danych",
+  "priority": 1,
+  "deadline": null,
+  "done": false,
+  "parentId": "1774042525986",
+  "createdAt": {
+    "$date": "2026-03-20T21:36:02.913Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T21:36:02.913Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdbe4465a375d33702fe4f"
+  },
+  "uuid": "1774042692004",
+  "title": "Zrobić paginacje",
+  "priority": 1,
+  "deadline": null,
+  "done": false,
+  "parentId": "1774042525986",
+  "createdAt": {
+    "$date": "2026-03-20T21:38:12.005Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T21:38:12.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdbe5e65a375d33702fe52"
+  },
+  "uuid": "1774042718631",
+  "title": "Automatyczny focus na inputy",
+  "priority": 1,
+  "deadline": null,
+  "done": false,
+  "parentId": "1774042525986",
+  "createdAt": {
+    "$date": "2026-03-20T21:38:38.631Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T21:38:38.631Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdbeec65a375d33702fe55"
+  },
+  "uuid": "1774042860102",
+  "title": "Defaultowo muszą się taski po dacie dodania pokazywać, od najwcześniejszego (główne)",
+  "priority": 2,
+  "deadline": null,
+  "done": false,
+  "parentId": "1774042525986",
+  "createdAt": {
+    "$date": "2026-03-20T21:41:00.102Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T22:02:42.779Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdbf0265a375d33702fe58"
+  },
+  "uuid": "1774042882256",
+  "title": "Categories (podobne działanie jak task)",
+  "priority": 3,
+  "deadline": null,
+  "done": false,
+  "parentId": "1774042502562",
+  "createdAt": {
+    "$date": "2026-03-20T21:41:22.257Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T21:59:15.300Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6df2ffa7be61c9e6fa8"
+  },
+  "uuid": "1774048991438",
+  "title": "Podlasie",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:11.442Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:11.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6e12ffa7be61c9e6fab"
+  },
+  "uuid": "1774048993079",
+  "title": "dasdas",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:13.079Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:13.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6e22ffa7be61c9e6fae"
+  },
+  "uuid": "1774048994096",
+  "title": "ewqewqewqe",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:14.097Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:14.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6e32ffa7be61c9e6fb1"
+  },
+  "uuid": "1774048995668",
+  "title": "dasdasdasdsa",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:15.668Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:15.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6e52ffa7be61c9e6fb4"
+  },
+  "uuid": "1774048997088",
+  "title": "dasdasdasd",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:17.088Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:17.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6e62ffa7be61c9e6fb7"
+  },
+  "uuid": "1774048998784",
+  "title": "dasdasdasdas",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:18.785Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:18.785Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6e82ffa7be61c9e6fba"
+  },
+  "uuid": "1774049000777",
+  "title": "dsadasdasdasdas",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:20.778Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:20.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6eb2ffa7be61c9e6fbd"
+  },
+  "uuid": "1774049003132",
+  "title": "dsawaqewqewq",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:23.132Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:23.132Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6ed2ffa7be61c9e6fc0"
+  },
+  "uuid": "1774049005937",
+  "title": "czxcxzczxczxcxz",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:25.938Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:25.938Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6f02ffa7be61c9e6fc3"
+  },
+  "uuid": "1774049008395",
+  "title": "213213213123",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:28.395Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:28.395Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bdd6f82ffa7be61c9e6fc6"
+  },
+  "uuid": "1774049016578",
+  "title": "21312312321",
+  "priority": 5,
+  "deadline": null,
+  "done": false,
+  "parentId": null,
+  "createdAt": {
+    "$date": "2026-03-20T23:23:36.578Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T23:23:36.578Z"
+  },
+  "__v": 0
+}]

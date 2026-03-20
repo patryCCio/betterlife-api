@@ -3,10 +3,10 @@ import { Task } from "../models/task.model.js";
 // 🔧 helper – budowanie drzewa
 const buildTree = (tasks, parentId = null) => {
   return tasks
-    .filter(t => t.parentId === parentId)
-    .map(t => ({
+    .filter((t) => t.parentId === parentId)
+    .map((t) => ({
       ...t._doc,
-      subtask: buildTree(tasks, t.uuid)
+      subtask: buildTree(tasks, t.uuid),
     }));
 };
 
@@ -15,7 +15,7 @@ const getAllChildren = (tasks, parentId) => {
   let result = [];
 
   const find = (pid) => {
-    const children = tasks.filter(t => t.parentId === pid);
+    const children = tasks.filter((t) => t.parentId === pid);
     for (let child of children) {
       result.push(child.uuid);
       find(child.uuid);
@@ -26,15 +26,8 @@ const getAllChildren = (tasks, parentId) => {
   return result;
 };
 
-
-// 📥 GET TODOS (tree + filter + sort + pagination rootów)
 export const getTodos = async (req, res) => {
-  const {
-    btnState = "all",
-    sortBy = "none",
-    page = 1,
-    limit = 10
-  } = req.query;
+  const { btnState = "all", sortBy = "none", page = 1, limit = 5 } = req.query;
 
   try {
     let filter = {};
@@ -42,32 +35,76 @@ export const getTodos = async (req, res) => {
     if (btnState === "done") filter.done = true;
     if (btnState === "undone") filter.done = false;
 
-    const tasks = await Task.find(filter);
-
-    // 🧠 sort tylko rootów
-    const sortMap = {
-      createdDesc: (a, b) => new Date(b.deadline || 0) - new Date(a.deadline || 0),
-      createdAsc: (a, b) => new Date(a.deadline || 0) - new Date(b.deadline || 0),
-      priorityDesc: (a, b) => b.priority - a.priority,
-      priorityAsc: (a, b) => a.priority - b.priority,
+    const sortOptions = {
+      createdDesc: { deadline: -1 },
+      createdAsc: { deadline: 1 },
+      priorityDesc: { priority: -1 },
+      priorityAsc: { priority: 1 },
     };
 
-    let tree = buildTree(tasks);
+    const skip = (page - 1) * limit;
 
-    if (sortMap[sortBy]) {
-      tree.sort(sortMap[sortBy]);
+    // ✅ 1. rooty (parentId = null)
+    const roots = await Task.find({ ...filter, parentId: null })
+      .sort(sortOptions[sortBy] || {})
+      .skip(skip)
+      .limit(Number(limit));
+
+    const rootIds = roots.map((r) => r.uuid);
+
+    // ✅ 2. rekurencja po uuid
+    async function getAllDescendants(parentIds) {
+      const children = await Task.find({
+        parentId: { $in: parentIds },
+      });
+
+      if (!children.length) return [];
+
+      const childIds = children.map((c) => c.uuid);
+
+      const deeper = await getAllDescendants(childIds);
+
+      return [...children, ...deeper];
     }
 
-    // 📄 paginacja rootów
-    const start = (page - 1) * limit;
-    const paginated = tree.slice(start, start + Number(limit));
+    const descendants = await getAllDescendants(rootIds);
 
-    res.json(paginated);
+    const allTasks = [...roots, ...descendants];
+
+    // ✅ 3. buildTree na uuid
+    function buildTree(tasks) {
+      const map = {};
+      const tree = [];
+
+      tasks.forEach((task) => {
+        map[task.uuid] = {
+          ...task.toObject(),
+          subtask: [],
+        };
+      });
+
+      tasks.forEach((task) => {
+        if (task.parentId) {
+          map[task.parentId]?.subtask.push(map[task.uuid]);
+        } else {
+          tree.push(map[task.uuid]);
+        }
+      });
+
+      return tree;
+    }
+
+    const tree = buildTree(allTasks);
+
+    const total = await Task.countDocuments({ ...filter, parentId: null });
+
+    console.log(total);
+
+    res.json(tree);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 };
-
 
 // ➕ ADD TASK / SUBTASK
 export const addTask = async (req, res) => {
@@ -80,7 +117,7 @@ export const addTask = async (req, res) => {
       priority,
       deadline: deadline || null,
       done: false,
-      parentId
+      parentId,
     });
 
     res.json(task);
@@ -89,17 +126,14 @@ export const addTask = async (req, res) => {
   }
 };
 
-
 // ✏️ EDIT
 export const updateTask = async (req, res) => {
   try {
     const { uuid } = req.params;
 
-    const updated = await Task.findOneAndUpdate(
-      { uuid },
-      req.body,
-      { new: true }
-    );
+    const updated = await Task.findOneAndUpdate({ uuid }, req.body, {
+      new: true,
+    });
 
     res.json(updated);
   } catch (err) {
@@ -107,14 +141,13 @@ export const updateTask = async (req, res) => {
   }
 };
 
-
 // ✅ TOGGLE DONE (+ wszystkie dzieci)
 export const toggleDone = async (req, res) => {
   try {
     const { uuid } = req.params;
 
     const allTasks = await Task.find();
-    const task = allTasks.find(t => t.uuid === uuid);
+    const task = allTasks.find((t) => t.uuid === uuid);
 
     const newDone = !task.done;
 
@@ -122,7 +155,7 @@ export const toggleDone = async (req, res) => {
 
     await Task.updateMany(
       { uuid: { $in: [uuid, ...childrenIds] } },
-      { done: newDone }
+      { done: newDone },
     );
 
     res.json({ success: true });
@@ -130,7 +163,6 @@ export const toggleDone = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
-
 
 // 🗑️ DELETE (+ całe poddrzewo)
 export const deleteTask = async (req, res) => {
@@ -141,7 +173,7 @@ export const deleteTask = async (req, res) => {
     const childrenIds = getAllChildren(allTasks, uuid);
 
     await Task.deleteMany({
-      uuid: { $in: [uuid, ...childrenIds] }
+      uuid: { $in: [uuid, ...childrenIds] },
     });
 
     res.json({ success: true });
