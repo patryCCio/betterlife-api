@@ -97,10 +97,7 @@ export const getTodos = async (req, res) => {
     const tree = buildTree(allTasks);
 
     const total = await Task.countDocuments({ ...filter, parentId: null });
-
-    console.log(total);
-
-    res.json(tree);
+    res.json({ tree, total });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
