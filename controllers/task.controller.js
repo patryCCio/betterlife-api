@@ -36,10 +36,12 @@ export const getTodos = async (req, res) => {
     if (btnState === "undone") filter.done = false;
 
     const sortOptions = {
-      createdDesc: { deadline: -1 },
-      createdAsc: { deadline: 1 },
-      priorityDesc: { priority: -1 },
-      priorityAsc: { priority: 1 },
+      createdAsc: { createdAt: 1 },
+      createdDesc: { createdAt: -1 },
+      deadlineAsc: { deadline: 1 },
+      deadlineDesc: { deadline: -1 },
+      priorityAsc: { priority: -1 },  // jeśli 1=lowest, -1=highest
+      priorityDesc: { priority: 1 },
     };
 
     const skip = (page - 1) * limit;
