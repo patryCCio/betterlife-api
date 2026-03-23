@@ -1,0 +1,1788 @@
+<style>
+.offer-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+.offer-wrapper .offer-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1160px;
+}
+.offer-wrapper .offer-box .offer-box-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #393939;
+  transition: 0.3s;
+}
+.offer-wrapper .offer-box .offer-box-top .span-box {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.offer-wrapper .offer-box .offer-box-top .span-box span {
+  display: block;
+  background-color: #CCC;
+  position: absolute;
+  transition: 0.5s;
+}
+.offer-wrapper .offer-box .offer-box-top .span-box span:nth-child(1) {
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.offer-wrapper .offer-box .offer-box-top .span-box span:nth-child(2) {
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.offer-wrapper .offer-box .offer-box-top h2 {
+  padding: 0;
+  margin: 0;
+  color: #CCC;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Houschka", Sans-Serif;
+}
+.offer-wrapper .offer-box .offer-box-top:hover {
+  background-color: #333;;
+  cursor: pointer;
+}
+.offer-wrapper .offer-box .offer-box:last-child .offer-box-top {
+  border-bottom: none;
+}
+.offer-wrapper .offer-box .offer-box-top.showed {
+  border-bottom: 1px solid #CCC;
+}
+.offer-wrapper .offer-box .offer-box-top.showed .span-box span:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.offer-wrapper .offer-box .offer-box-top.showed .span-box span:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.offer-wrapper .offer-box .offer-box-bottom {
+  width: 100%;
+  height: 0;
+  /*background-color: #222;*/
+  transition: .7s;
+  padding: 0px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom.showed {
+  padding: 30px 20px;
+  transition: .7s;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  max-width: 1160px;
+}
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 35px;
+  color: #ccc;
+}
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in h3 {
+  color: #ccc;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: "Houschka", Sans-Serif;
+}
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 60px;
+  list-style-type: upper-roman;
+  list-style-position: outside;
+}
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li {
+text-justify: inter-word; 
+  hyphens: auto;           
+  color: #ccc;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li p {
+    text-justify: inter-word; 
+  hyphens: auto;   
+  color: #ccc;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 10px;
+}
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li p:last-child {
+  margin-bottom: 20px;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li ul {
+    text-align: justify;
+    text-justify: inter-word; 
+  hyphens: auto;  
+  color: #ccc;
+  font-size: 18px;
+  margin: 20px 0 20px 20px;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li ul li {
+    text-justify: inter-word;
+  hyphens: auto;  
+    text-align: justify;
+  color: #ccc;
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom .timelineps {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+  width: 100vw;
+  min-height: 2px;
+  height: 2px;
+  background-color: #4b4b4b;
+  margin: 120px 0 150px 0;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1520px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box h4 {
+  position: relative;
+  color: #ccc;
+  width: 180px;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Houschka", Sans-Serif;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box h4:nth-child(2n+1) {
+  transform: translateY(80px);
+  align-items: flex-start;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box h4:nth-child(2n) {
+  transform: translateY(-80px);
+  align-items: flex-end;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box .dotps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: relative;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box .dotps p {
+    position: relative;
+    top: 1.25px;
+    width: 100%;
+    text-align: center;
+  color: #393939;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile {
+  position: relative;
+  visibility: visible;
+  width: 100vw;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile h3 {
+  margin-bottom: 60px;
+  color: #ccc;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Houschka", Sans-Serif;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .line {
+  width: 2px;
+  background-color: #4b4b4b;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 14px;
+  /*right: 14px;*/
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .dotps {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .dotps h4 {
+  color: #393939;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  position: relative;
+  font-size: 18px;
+  top: 2px;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .text {
+  margin: 0;
+  padding: 0 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 22px;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .text h3 {
+  margin: 7px 0 10px 0;
+  padding: 0;
+  color: #ccc;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  font-family: "Houschka", Sans-Serif;
+}
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .text p {
+  text-align: left;
+  text-justify: inter-word;
+  word-break: break-word;
+  hyphens: auto;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .text ul {
+  color: #ccc;
+  font-size: 16px;
+  margin: -20px 0 20px 20px;
+}
+
+.offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .text ul li {
+    padding-bottom: 10px;
+    line-height: 30px;
+    text-align: left;     
+}
+
+
+
+@media (min-width: 767px) and (max-width: 1400px) {
+  .offer-wrapper .offer-box .offer-box-top h2 {
+    font-size: 26px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in p {
+    font-size: 16px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in h3 {
+    text-align: start;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile .mob-box .dotps h4 {
+      font-size: 18px;
+  }
+  
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li {
+    font-size: 20px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li p {
+    font-size: 18px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box h4 {
+    width: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .offer-wrapper {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .offer-wrapper .offer-box {
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer-wrapper .offer-box .offer-box-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #393939;
+    transition: 0.3s;
+    
+  }
+  .offer-wrapper .offer-box .offer-box-top .span-box {
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+  .offer-wrapper .offer-box .offer-box-top .span-box span {
+    display: block;
+    background-color: #CCC;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .offer-wrapper .offer-box .offer-box-top .span-box span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .offer-wrapper .offer-box .offer-box-top .span-box span:nth-child(2) {
+    height: 100%;
+    width: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .offer-wrapper .offer-box .offer-box-top h2 {
+    padding: 0;
+    margin: 0;
+    color: #CCC;
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .offer-wrapper .offer-box .offer-box-top:hover {
+    background-color: #333;
+    cursor: pointer;
+  }
+  .offer-wrapper .offer-box .offer-box-top.showed {
+    border-bottom: 1px solid #fff;
+  }
+  .offer-wrapper .offer-box .offer-box-top.showed .span-box span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .offer-wrapper .offer-box .offer-box-top.showed .span-box span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+  .offer-wrapper .offer-box .offer-box-bottom {
+    width: 100vw;
+    height: 0;
+    padding: 0px 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .offer-wrapper .offer-box .offer-box-bottom.showed {
+    padding: 20px 40px;
+  }
+  
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in {
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    max-width: 1160px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 35px;
+    color: #ccc;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in h3 {
+    color: #ccc;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+    font-weight: 400;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li p {
+    font-size: 18px;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .timelineps-mobile {
+    position: absolute;
+    visibility: hidden;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .timelineps {
+    display: block;
+    position: relative;
+    visibility: visible;
+  }
+  .offer-wrapper .offer-box .offer-box-bottom .timelineps .timeline-box h4 {
+    position: relative;
+    color: #ccc;
+    width: 180px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  
+  .offer-wrapper .offer-box .offer-box-bottom .offer-box-bottom-in .offer-ol li ul li {
+      font-size: 18px;
+  }
+}/*# sourceMappingURL=offer.css.map */
+</style>
+
+<div class="offer-wrapper">
+      <div class="offer-box">
+        <div id="card-1" class="offer-box-top">
+          <h2 class="scroll-trigger scroll-opacity">KONSULTACJE</h2>
+          <div class="span-box"><span></span><span></span></div>
+        </div>
+        <div id="cardb-1" class="offer-box-bottom">
+          <div
+            class="offer-box-bottom-in"
+            style="visibility: visible; position: relative"
+          >
+            <p class="scroll-trigger scroll-opacity">
+              Usługa jest skierowana do osób, które chcą odmienić swoją
+              przestrzeń mieszkalną przy stosunkowo niewielkich nakładach -
+              poprzez zmianę kolorystyki, oświetlenia, odrestaurowanie mebli czy
+              dodanie kilku detali. To idealne rozwiązanie dla tych, którzy chcą
+              nadać wnętrzu nowy wymiar bez kapitalnego remontu.​
+            </p>
+          </div>
+          <div class="timelineps">
+            <div class="timeline-box">
+              <div class="dotps">
+                <p>I</p>
+              </div>
+              <div class="dotps">
+                <p>II</p>
+              </div>
+              <div class="dotps">
+                <p>III</p>
+              </div>
+              <div class="dotps">
+                <p>IV</p>
+              </div>
+              <div class="dotps">
+                <p>V</p>
+              </div>
+            </div>
+            <div class="timeline-box">
+              <h4>ROZMOWA WSTĘPNA</h4>
+              <h4>INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h4>
+              <h4>OPRACOWANIE PROPOZYCJI</h4>
+              <h4>SPOTKANIE KONSULTACYJNE</h4>
+              <h4>FINALNE OPRACOWANIE</h4>
+            </div>
+          </div>
+
+          <div class="timelineps-mobile">
+            <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>I</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">ROZMOWA WSTĘPNA</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na początku przeprowadzamy krótką rozmowę, podczas której
+                  poznajemy potrzeby, styl życia i oczekiwania dotyczące
+                  przestrzeni. Ustalamy ogólny kierunek prac oraz zakres usługi.
+                </p>
+              </div>
+            </div>
+
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>II</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Przekazujemy krótką ankietę wraz z prośbą o zdjęcia oraz rzut
+                  mieszkania. Zebrane informacje pozwalają przygotować wstępne
+                  układy funkcjonalne lub "mapę zmian", jeśli zakres dotyczy
+                  głównie estetyki.
+                </p>
+                <p class="scroll-trigger scroll-opacity">
+                  W razie potrzeby możliwe jest również przeprowadzenie
+                  inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne
+                  wymiary.
+                </p>
+              </div>
+            </div>
+
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>III</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">OPRACOWANIE PROPOZYCJI</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na podstawie zebranych danych przygotowujemy konkretne
+                  rozwiązania: nowe układy funkcjonalne, zestawy kolorystyczne, pomysły na
+                  oświetlenie, propozycje mebli i dodatków. Wszystko tworzone
+                  jest w sposób spójny, przemyślany i dostosowany do założonego
+                  budżetu oraz stylu życia.
+                </p>
+              </div>
+            </div>
+
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>IV</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">SPOTKANIE KONSULTACYJNE</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Podczas wcześniej zaplanowanego spotkania omawiamy
+                  przygotowane warianty. Analizujemy ich funkcjonalność,
+                  estetykę i możliwości wdrożenia. Ustalamy kierunek, który
+                  najbardziej odpowiada założeniom projektu, a także obszary
+                  wymagające korekt.
+                </p>
+              </div>
+            </div>
+
+            <div class="mob-box">
+              <div class="dotps">
+                <h4>V</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">FINALNE OPRACOWANIE</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po spotkaniu nanosimy uzgodnione poprawki i przekazujemy
+                  finalny zestaw układów, rekomendacji oraz propozycji zmian -
+                  gotowy plan metamorfozy, który można wdrażać etapowo lub od
+                  razu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="offer-box-bottom-in">
+            <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>
+            <ol class="offer-ol">
+              <li class="scroll-trigger scroll-opacity">
+                ROZMOWA WSTĘPNA
+                <p>
+                  Na początku przeprowadzamy krótką rozmowę, podczas której
+                  poznajemy potrzeby, styl życia i oczekiwania dotyczące
+                  przestrzeni. Ustalamy ogólny kierunek prac oraz zakres usługi.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA
+                <p>
+                  Przekazujemy krótką ankietę wraz z prośbą o zdjęcia oraz rzut
+                  mieszkania. Zebrane informacje pozwalają przygotować wstępne
+                  układy funkcjonalne lub "mapę zmian", jeśli zakres dotyczy
+                  głównie estetyki.
+                </p>
+                <p>
+                  W razie potrzeby możliwe jest również przeprowadzenie
+                  inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne
+                  wymiary.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                OPRACOWANIE PROPOZYCJI
+                <p>
+                  Na podstawie zebranych danych przygotowujemy konkretne
+                  rozwiązania: nowe układy funkcjonalne, zestawy kolorystyczne, pomysły na
+                  oświetlenie, propozycje mebli i dodatków. Wszystko tworzone
+                  jest w sposób spójny, przemyślany i dostosowany do założonego
+                  budżetu oraz stylu życia.
+                </p>
+              </li>
+
+              <li class="scroll-trigger scroll-opacity">
+                SPOTKANIE KONSULTACYJNE
+                <p>
+                  Podczas wcześniej zaplanowanego spotkania omawiamy
+                  przygotowane warianty. Analizujemy ich funkcjonalność,
+                  estetykę i możliwości wdrożenia. Ustalamy kierunek, który
+                  najbardziej odpowiada założeniom projektu, a także obszary
+                  wymagające korekt.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                FINALNE OPRACOWANIE
+                <p>
+                  Po spotkaniu nanosimy uzgodnione poprawki i przekazujemy
+                  finalny zestaw układów, rekomendacji oraz propozycji zmian -
+                  gotowy plan metamorfozy, który można wdrażać etapowo lub od
+                  razu.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-box">
+        <div id="card-2" class="offer-box-top">
+          <h2 class="scroll-trigger scroll-opacity">PROJEKT KONCEPCYJNY</h2>
+          <div class="span-box"><span></span><span></span></div>
+        </div>
+        <div id="cardb-2" class="offer-box-bottom">
+          <div
+            class="offer-box-bottom-in"
+            style="visibility: visible; position: relative"
+          >
+            <p class="scroll-trigger scroll-opacity">
+              Usługa jest szczególnie polecana osobom planującym zakup
+              mieszkania deweloperskiego, które nie są usatysfakcjonowane
+              zaproponowanym układem. Na podstawie rozmów o potrzebach, stylu
+              życia i oczekiwaniach Klienta tworzymy najbardziej funkcjonalny
+              podział przestrzeni oraz wstępną stylistykę. Efektem są
+              wizualizacje prezentujące proponowaną aranżację oraz ewentualne
+              wskazania zmian branżowych, które pozwolą dostosować mieszkanie do
+              wybranej koncepcji już na etapie budowy.
+            </p>
+          </div>
+          <div class="timelineps">
+            <div class="timeline-box">
+              <div class="dotps"><p>I</p></div>
+              <div class="dotps"><p>II</p></div>
+              <div class="dotps"><p>III</p></div>
+              <div class="dotps"><p>IV</p></div>
+              <div class="dotps"><p>V</p></div>
+              <div class="dotps"><p>VI</p></div>
+              <div class="dotps"><p>VII</p></div>
+              <div class="dotps"><p>VIII</p></div>
+              <div class="dotps"><p>IX</p></div>
+            </div>
+            <div class="timeline-box">
+              <h4>ROZMOWA WSTĘPNA</h4>
+              <h4>INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h4>
+              <h4>PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH</h4>
+              <h4>SPOTKANIE KONSULTACYJNE</h4>
+              <h4>FINALIZACJA UKŁADÓW FUNKCJONALNYCH</h4>
+              <h4>WIZUALIZACJA PRZESTRZENI</h4>
+              <h4>AKCEPTACJA I KOREKTY</h4>
+              <h4>RYSUNKI BRANŻOWE (JEŚLI WYMAGANE)</h4>
+              <h4>FINALIZACJA PROJEKTU KONCEPCYJNEGO</h4>
+            </div>
+          </div>
+
+          <div class="timelineps-mobile">
+            <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>I</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">ROZMOWA WSTĘPNA</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na początku przeprowadzamy krótką rozmowę, podczas której
+                  poznajemy potrzeby, styl życia i oczekiwania dotyczące
+                  przestrzeni. Ustalamy ogólny kierunek prac oraz zakres usługi.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>II</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Przekazywana jest indywidualna ankieta oraz prośba o
+                  dostarczenie rzutów architektonicznych, zdjęć lub nagrania
+                  wideo przestrzeni. Materiały te stanowią podstawę do
+                  przygotowania układów funkcjonalnych.
+                </p>
+                <p class="scroll-trigger scroll-opacity">
+                  W razie potrzeby możliwe jest również przeprowadzenie
+                  inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne
+                  wymiary.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>III</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na podstawie wszystkich informacji opracowywane są 2-3
+                  propozycje układów funkcjonalnych w rzucie 2D. Każdy wariant
+                  prezentuje inny sposób zagospodarowania przestrzeni - podziały
+                  pomieszczeń, ustawienie funkcji, rozmieszczenie kluczowych
+                  elementów wyposażenia.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>IV</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">SPOTKANIE KONSULTACYJNE</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Podczas ustalonego spotkania omawiane są przygotowane
+                  warianty. Wskazywane są ich możliwości, ograniczenia oraz
+                  potencjał. Wraz z Klientem wybierany jest kierunek, który
+                  najlepiej odpowiada oczekiwaniom - z uwzględnieniem stylu
+                  życia, budżetu, celów funkcjonalnych oraz preferencji
+                  stylistycznych.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>V</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">FINALIZACJA UKŁADÓW FUNKCJONALNYCH</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po spotkaniu nanoszone są uzgodnione poprawki i przekazywany
+                  jest finalny układ funkcjonalny - precyzyjny, przemyślany i
+                  gotowy do dalszego etapu projektowania.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>VI</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">WIZUALIZACJA PRZESTRZENI</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na podstawie zatwierdzonego układu przygotowywane są
+                  szczegółowe wizualizacje 3D. Prezentują one stylistykę
+                  wnętrza, dobór kolorów, materiałów, proporcje oraz charakter
+                  przestrzeni jako całości.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>VII</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">AKCEPTACJA I KOREKTY</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po prezentacji wizualizacji możliwe jest wprowadzenie 1 tury
+                  poprawek - dopracowanie kolorystyki, korekta mebli,
+                  oświetlenia lub detali, aby projekt w pełni odpowiadał
+                  założeniom.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>VIII</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">RYSUNKI BRANŻOWE (JEŚLI WYMAGANE)</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Jeżeli dana inwestycja wymaga zmian układu ścian, instalacji
+                  elektrycznej lub instalacji wodno-kanalizacyjnej,
+                  przygotowywane są odpowiednie rysunki branżowe w wersji
+                  koncepcyjnej - jako baza do dalszej koordynacji wykonawczej.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="dotps">
+                <h4>IX</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">FINALIZACJA PROJEKTU KONCEPCYJNEGO</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Ostatecznie przekazywany jest pełny pakiet materiałów: finalny
+                  układ funkcjonalny, wizualizacje oraz ewentualne rysunki
+                  branżowe. To kompletna koncepcja wnętrza, gotowa do przejścia
+                  w projekt wykonawczy lub realizację etapową.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="offer-box-bottom-in">
+            <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>
+            <ol class="offer-ol">
+              <li class="scroll-trigger scroll-opacity">
+                ROZMOWA WSTĘPNA
+                <p>
+                  Na początku przeprowadzamy krótką rozmowę, podczas której
+                  poznajemy potrzeby, styl życia i oczekiwania dotyczące
+                  przestrzeni. Ustalamy ogólny kierunek prac oraz zakres usługi.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA
+                <p>
+                  Przekazywana jest indywidualna ankieta oraz prośba o
+                  dostarczenie rzutów architektonicznych, zdjęć lub nagrania
+                  wideo przestrzeni. Materiały te stanowią podstawę do
+                  przygotowania układów funkcjonalnych.
+                </p>
+                <p>
+                  W razie potrzeby możliwe jest również przeprowadzenie
+                  inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne
+                  wymiary.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH
+                <p>
+                  Na podstawie wszystkich informacji opracowywane są 2-3
+                  propozycje układów funkcjonalnych w rzucie 2D. Każdy wariant
+                  prezentuje inny sposób zagospodarowania przestrzeni - podziały
+                  pomieszczeń, ustawienie funkcji, rozmieszczenie kluczowych
+                  elementów wyposażenia.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                SPOTKANIE KONSULTACYJNE
+                <p>
+                  Podczas ustalonego spotkania omawiane są przygotowane
+                  warianty. Wskazywane są ich możliwości, ograniczenia oraz
+                  potencjał. Wraz z Klientem wybierany jest kierunek, który
+                  najlepiej odpowiada oczekiwaniom - z uwzględnieniem stylu
+                  życia, budżetu, celów funkcjonalnych oraz preferencji
+                  stylistycznych.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                FINALIZACJA UKŁADÓW FUNKCJONALNYCH
+                <p>
+                  Po spotkaniu nanoszone są uzgodnione poprawki i przekazywany
+                  jest finalny układ funkcjonalny - precyzyjny, przemyślany i
+                  gotowy do dalszego etapu projektowania.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                WIZUALIZACJA PRZESTRZENI
+                <p>
+                  Na podstawie zatwierdzonego układu przygotowywane są
+                  szczegółowe wizualizacje 3D. Prezentują one stylistykę
+                  wnętrza, dobór kolorów, materiałów, proporcje oraz charakter
+                  przestrzeni jako całości.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                AKCEPTACJA I KOREKTY
+                <p>
+                  Po prezentacji wizualizacji możliwe jest wprowadzenie 1 tury
+                  poprawek - dopracowanie kolorystyki, korekta mebli,
+                  oświetlenia lub detali, aby projekt w pełni odpowiadał
+                  założeniom.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                RYSUNKI BRANŻOWE (JEŚLI WYMAGANE)
+                <p>
+                  Jeżeli dana inwestycja wymaga zmian układu ścian, instalacji
+                  elektrycznej lub instalacji wodno-kanalizacyjnej,
+                  przygotowywane są odpowiednie rysunki branżowe w wersji
+                  koncepcyjnej - jako baza do dalszej koordynacji wykonawczej.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                FINALIZACJA PROJEKTU KONCEPCYJNEGO
+                <p>
+                  Ostatecznie przekazywany jest pełny pakiet materiałów: finalny
+                  układ funkcjonalny, wizualizacje oraz ewentualne rysunki
+                  branżowe. To kompletna koncepcja wnętrza, gotowa do przejścia
+                  w projekt wykonawczy lub realizację etapową.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="offer-box">-->
+      <!--  <div id="card-2" class="offer-box-top">-->
+      <!--    <h2 class="scroll-trigger scroll-opacity">PROJEKT KONCEPCYJNY ROZSZERZONY</h2>-->
+      <!--    <div class="span-box"><span></span><span></span></div>-->
+      <!--  </div>-->
+      <!--  <div id="cardb-2" class="offer-box-bottom">-->
+      <!--    <div-->
+      <!--      class="offer-box-bottom-in"-->
+      <!--      style="visibility: visible; position: relative"-->
+      <!--    >-->
+      <!--      <p class="scroll-trigger scroll-opacity">-->
+      <!--        Usługa jest szczególnie polecana osobom planującym zakup-->
+      <!--        mieszkania deweloperskiego, które nie są usatysfakcjonowane-->
+      <!--        zaproponowanym układem. Na podstawie rozmów o potrzebach, stylu-->
+      <!--        życia i oczekiwaniach Klienta tworzymy najbardziej funkcjonalny-->
+      <!--        podział przestrzeni oraz wstępną stylistykę. Efektem są-->
+      <!--        wizualizacje prezentujące proponowaną aranżację oraz ewentualne-->
+      <!--        wskazania zmian branżowych, które pozwolą dostosować mieszkanie do-->
+      <!--        wybranej koncepcji już na etapie budowy.-->
+      <!--      </p>-->
+      <!--    </div>-->
+      <!--    <div class="timelineps">-->
+      <!--      <div class="timeline-box">-->
+      <!--        <div class="dotps"><p>I</p></div>-->
+      <!--        <div class="dotps"><p>II</p></div>-->
+      <!--        <div class="dotps"><p>III</p></div>-->
+      <!--        <div class="dotps"><p>IV</p></div>-->
+      <!--        <div class="dotps"><p>V</p></div>-->
+      <!--        <div class="dotps"><p>VI</p></div>-->
+      <!--        <div class="dotps"><p>VII</p></div>-->
+      <!--        <div class="dotps"><p>VIII</p></div>-->
+      <!--        <div class="dotps"><p>IX</p></div>-->
+      <!--      </div>-->
+      <!--      <div class="timeline-box">-->
+      <!--        <h4>ROZMOWA WSTĘPNA</h4>-->
+      <!--        <h4>INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h4>-->
+      <!--        <h4>PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH</h4>-->
+      <!--        <h4>SPOTKANIE KONSULTACYJNE</h4>-->
+      <!--        <h4>FINALIZACJA UKŁADÓW FUNKCJONALNYCH</h4>-->
+      <!--        <h4>WIZUALIZACJA PRZESTRZENI</h4>-->
+      <!--        <h4>AKCEPTACJA I KOREKTY</h4>-->
+      <!--        <h4>RYSUNKI BRANŻOWE (JEŚLI WYMAGANE)</h4>-->
+      <!--        <h4>FINALIZACJA PROJEKTU KONCEPCYJNEGO</h4>-->
+      <!--      </div>-->
+      <!--    </div>-->
+
+      <!--    <div class="timelineps-mobile">-->
+      <!--      <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>I</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">ROZMOWA WSTĘPNA</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Na początku przeprowadzamy krótką rozmowę, podczas której-->
+      <!--            poznajemy potrzeby, styl życia i oczekiwania dotyczące-->
+      <!--            przestrzeni. Ustalamy ogólny kierunek prac oraz zakres usługi.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>II</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Przekazywana jest indywidualna ankieta oraz prośba o-->
+      <!--            dostarczenie rzutów architektonicznych, zdjęć lub nagrania-->
+      <!--            wideo przestrzeni. Materiały te stanowią podstawę do-->
+      <!--            przygotowania układów funkcjonalnych.-->
+      <!--          </p>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            W razie potrzeby możliwe jest również przeprowadzenie-->
+      <!--            inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne-->
+      <!--            wymiary.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>III</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Na podstawie wszystkich informacji opracowywane są 2-3-->
+      <!--            propozycje układów funkcjonalnych w rzucie 2D. Każdy wariant-->
+      <!--            prezentuje inny sposób zagospodarowania przestrzeni - podziały-->
+      <!--            pomieszczeń, ustawienie funkcji, rozmieszczenie kluczowych-->
+      <!--            elementów wyposażenia.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>IV</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">SPOTKANIE KONSULTACYJNE</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Podczas ustalonego spotkania omawiane są przygotowane-->
+      <!--            warianty. Wskazywane są ich możliwości, ograniczenia oraz-->
+      <!--            potencjał. Wraz z Klientem wybierany jest kierunek, który-->
+      <!--            najlepiej odpowiada oczekiwaniom - z uwzględnieniem stylu-->
+      <!--            życia, budżetu, celów funkcjonalnych oraz preferencji-->
+      <!--            stylistycznych.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>V</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">FINALIZACJA UKŁADÓW FUNKCJONALNYCH</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Po spotkaniu nanoszone są uzgodnione poprawki i przekazywany-->
+      <!--            jest finalny układ funkcjonalny - precyzyjny, przemyślany i-->
+      <!--            gotowy do dalszego etapu projektowania.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>VI</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">WIZUALIZACJA PRZESTRZENI</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Na podstawie zatwierdzonego układu przygotowywane są-->
+      <!--            szczegółowe wizualizacje 3D. Prezentują one stylistykę-->
+      <!--            wnętrza, dobór kolorów, materiałów, proporcje oraz charakter-->
+      <!--            przestrzeni jako całości.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>VII</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">AKCEPTACJA I KOREKTY</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Po prezentacji wizualizacji możliwe jest wprowadzenie 1 tury-->
+      <!--            poprawek - dopracowanie kolorystyki, korekta mebli,-->
+      <!--            oświetlenia lub detali, aby projekt w pełni odpowiadał-->
+      <!--            założeniom.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="line"></div>-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>VIII</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">RYSUNKI BRANŻOWE (JEŚLI WYMAGANE)</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Jeżeli dana inwestycja wymaga zmian układu ścian, instalacji-->
+      <!--            elektrycznej lub instalacji wodno-kanalizacyjnej,-->
+      <!--            przygotowywane są odpowiednie rysunki branżowe w wersji-->
+      <!--            koncepcyjnej - jako baza do dalszej koordynacji wykonawczej.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="mob-box">-->
+      <!--        <div class="dotps">-->
+      <!--          <h4>IX</h4>-->
+      <!--        </div>-->
+      <!--        <div class="text">-->
+      <!--          <h3 class="scroll-trigger scroll-opacity">FINALIZACJA PROJEKTU KONCEPCYJNEGO</h3>-->
+      <!--          <p class="scroll-trigger scroll-opacity">-->
+      <!--            Ostatecznie przekazywany jest pełny pakiet materiałów: finalny-->
+      <!--            układ funkcjonalny, wizualizacje oraz ewentualne rysunki-->
+      <!--            branżowe. To kompletna koncepcja wnętrza, gotowa do przejścia-->
+      <!--            w projekt wykonawczy lub realizację etapową.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--    </div>-->
+
+      <!--    <div class="offer-box-bottom-in">-->
+      <!--      <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>-->
+      <!--      <ol class="offer-ol">-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          ROZMOWA WSTĘPNA-->
+      <!--          <p>-->
+      <!--            Na początku przeprowadzamy krótką rozmowę, podczas której-->
+      <!--            poznajemy potrzeby, styl życia i oczekiwania dotyczące-->
+      <!--            przestrzeni. Ustalamy ogólny kierunek prac oraz zakres usługi.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA-->
+      <!--          <p>-->
+      <!--            Przekazywana jest indywidualna ankieta oraz prośba o-->
+      <!--            dostarczenie rzutów architektonicznych, zdjęć lub nagrania-->
+      <!--            wideo przestrzeni. Materiały te stanowią podstawę do-->
+      <!--            przygotowania układów funkcjonalnych.-->
+      <!--          </p>-->
+      <!--          <p>-->
+      <!--            W razie potrzeby możliwe jest również przeprowadzenie-->
+      <!--            inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne-->
+      <!--            wymiary.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH-->
+      <!--          <p>-->
+      <!--            Na podstawie wszystkich informacji opracowywane są 2-3-->
+      <!--            propozycje układów funkcjonalnych w rzucie 2D. Każdy wariant-->
+      <!--            prezentuje inny sposób zagospodarowania przestrzeni - podziały-->
+      <!--            pomieszczeń, ustawienie funkcji, rozmieszczenie kluczowych-->
+      <!--            elementów wyposażenia.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          SPOTKANIE KONSULTACYJNE-->
+      <!--          <p>-->
+      <!--            Podczas ustalonego spotkania omawiane są przygotowane-->
+      <!--            warianty. Wskazywane są ich możliwości, ograniczenia oraz-->
+      <!--            potencjał. Wraz z Klientem wybierany jest kierunek, który-->
+      <!--            najlepiej odpowiada oczekiwaniom - z uwzględnieniem stylu-->
+      <!--            życia, budżetu, celów funkcjonalnych oraz preferencji-->
+      <!--            stylistycznych.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          FINALIZACJA UKŁADÓW FUNKCJONALNYCH-->
+      <!--          <p>-->
+      <!--            Po spotkaniu nanoszone są uzgodnione poprawki i przekazywany-->
+      <!--            jest finalny układ funkcjonalny - precyzyjny, przemyślany i-->
+      <!--            gotowy do dalszego etapu projektowania.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          WIZUALIZACJA PRZESTRZENI-->
+      <!--          <p>-->
+      <!--            Na podstawie zatwierdzonego układu przygotowywane są-->
+      <!--            szczegółowe wizualizacje 3D. Prezentują one stylistykę-->
+      <!--            wnętrza, dobór kolorów, materiałów, proporcje oraz charakter-->
+      <!--            przestrzeni jako całości.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          AKCEPTACJA I KOREKTY-->
+      <!--          <p>-->
+      <!--            Po prezentacji wizualizacji możliwe jest wprowadzenie 1 tury-->
+      <!--            poprawek - dopracowanie kolorystyki, korekta mebli,-->
+      <!--            oświetlenia lub detali, aby projekt w pełni odpowiadał-->
+      <!--            założeniom.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          RYSUNKI BRANŻOWE (JEŚLI WYMAGANE)-->
+      <!--          <p>-->
+      <!--            Jeżeli dana inwestycja wymaga zmian układu ścian, instalacji-->
+      <!--            elektrycznej lub instalacji wodno-kanalizacyjnej,-->
+      <!--            przygotowywane są odpowiednie rysunki branżowe w wersji-->
+      <!--            koncepcyjnej - jako baza do dalszej koordynacji wykonawczej.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--        <li class="scroll-trigger scroll-opacity">-->
+      <!--          FINALIZACJA PROJEKTU KONCEPCYJNEGO-->
+      <!--          <p>-->
+      <!--            Ostatecznie przekazywany jest pełny pakiet materiałów: finalny-->
+      <!--            układ funkcjonalny, wizualizacje oraz ewentualne rysunki-->
+      <!--            branżowe. To kompletna koncepcja wnętrza, gotowa do przejścia-->
+      <!--            w projekt wykonawczy lub realizację etapową.-->
+      <!--          </p>-->
+      <!--        </li>-->
+      <!--      </ol>-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</div>-->
+
+      <div class="offer-box">
+        <div id="card-2" class="offer-box-top">
+          <h2 class="scroll-trigger scroll-opacity">PROJEKT KOMPLEKSOWY</h2>
+          <div class="span-box"><span></span><span></span></div>
+        </div>
+        <div id="cardb-2" class="offer-box-bottom">
+          <div
+            class="offer-box-bottom-in"
+            style="visibility: visible; position: relative"
+          >
+            <p class="scroll-trigger scroll-opacity">
+              Usługa jest kompleksowym projektem wnętrza, obejmującym pełny
+              proces od koncepcji, przez wizualizacje, aż po szczegółowe
+              opracowanie wykonawcze. Na podstawie rozmów o potrzebach i stylu
+              życia Klienta tworzymy funkcjonalny układ przestrzeni,
+              realistyczne wizualizacje 3D oraz komplet rysunków i wytycznych
+              branżowych, które umożliwiają sprawną realizację projektu. Klient
+              otrzymuje także dobór materiałów, wyposażenia i pełne zestawienie
+              elementów, dzięki czemu projekt może zostać wykonany przez ekipę
+              bez dodatkowych ustaleń.
+            </p>
+          </div>
+          <div class="timelineps">
+            <div class="timeline-box">
+              <div class="dotps"><p>I</p></div>
+              <div class="dotps"><p>II</p></div>
+              <div class="dotps"><p>III</p></div>
+              <div class="dotps"><p>IV</p></div>
+              <div class="dotps"><p>V</p></div>
+              <div class="dotps"><p>VI</p></div>
+              <div class="dotps"><p>VII</p></div>
+              <div class="dotps"><p>VIII</p></div>
+              <div class="dotps"><p>IX</p></div>
+              <div class="dotps"><p>X</p></div>
+            </div>
+            <div class="timeline-box">
+              <h4>ROZMOWA WSTĘPNA</h4>
+              <h4>INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h4>
+              <h4>PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH</h4>
+              <h4>SPOTKANIE KONSULTACYJNE</h4>
+              <h4>FINALIZACJA UKŁADÓW FUNKCJONALNYCH</h4>
+              <h4>WIZUALIZACJA PRZESTRZENI</h4>
+              <h4>KOREKTA WIZUALIZACJI</h4>
+              <h4>PROJEKT TECHNICZNY</h4>
+              <h4>KOREKTA RYSUNKÓW TECHNICZNYCH</h4>
+              <h4>ZESTAWIENIE MATERIAŁÓW I KOSZTORYS</h4>
+            </div>
+          </div>
+
+          <div class="timelineps-mobile">
+            <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>I</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">ROZMOWA WSTĘPNA</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na początku przeprowadzamy krótką rozmowę, podczas której
+                  poznajemy potrzeby, styl życia i oczekiwania dotyczące
+                  przestrzeni Klienta. Ustalamy ogólny kierunek prac oraz zakres
+                  usługi.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>II</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Klient otrzymuje indywidualną ankietę oraz prośbę o
+                  przekazanie rzutów architektonicznych, zdjęć lub nagrania
+                  wideo przestrzeni. Materiały te stanowią podstawę do
+                  przygotowania układów funkcjonalnych.
+                </p>
+                <p class="scroll-trigger scroll-opacity">
+                  W razie potrzeby możliwe jest również przeprowadzenie
+                  inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne
+                  wymiary.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>III</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na podstawie wszystkich informacji opracowujemy 2-3 propozycje
+                  układów funkcjonalnych w rzucie 2D. Każdy wariant przedstawia
+                  inny sposób zagospodarowania przestrzeni- podziały
+                  pomieszczeń, ustawienie funkcji oraz rozmieszczenie kluczowych
+                  elementów wyposażenia.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>IV</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">SPOTKANIE KONSULTACYJNE</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Podczas spotkania omawiane są przygotowane warianty.
+                  Wskazujemy ich możliwości, ograniczenia oraz potencjał.
+                  Wspólnie z Klientem wybieramy kierunek, który najlepiej
+                  odpowiada oczekiwaniom, uwzględniając styl życia, budżet, cele
+                  funkcjonalne oraz preferencje stylistyczne.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>V</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">FINALIZACJA UKŁADÓW FUNKCJONALNYCH</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po spotkaniu nanosimy uzgodnione poprawki i przekazujemy
+                  finalny układ funkcjonalny - precyzyjny, przemyślany i gotowy
+                  do dalszego etapu projektowania.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>VI</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">WIZUALIZACJA PRZESTRZENI</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na podstawie zatwierdzonego układu przygotowujemy szczegółowe
+                  wizualizacje 3D, które prezentują stylistykę wnętrza, dobór
+                  kolorów, materiałów, proporcje oraz charakter przestrzeni jako
+                  całości.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>VII</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">KOREKTA WIZUALIZACJI</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po prezentacji wizualizacji Klient może zgłosić poprawki.
+                  Wprowadzamy jedną turę zmian, dopracowując kolorystykę, układ
+                  mebli, oświetlenie oraz detale, aby projekt w pełni odpowiadał
+                  założeniom.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>VIII</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">PROJEKT TECHNICZNY</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po zatwierdzeniu wizualizacji przygotowujemy kompletny projekt
+                  techniczny, stanowiący precyzyjną instrukcję do realizacji
+                  wnętrza.
+                </p>
+                <p class="scroll-trigger scroll-opacity">
+                  Teczka projektu zawiera szczegółowe rysunki i dokumentację
+                  niezbędną do wykonania wszystkich elementów:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">rysunki budowlane ścian i sufitów,</li>
+                  <li class="scroll-trigger scroll-opacity">
+                    dokumentację instalacji wodno-kanalizacyjnej, elektrycznej i
+                    wentylacyjnej,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    rozrys okładzin ściennych, posadzek oraz elementów
+                    kamiennych i szklanych,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    szczegółowe projekty mebli na zamówienie, zabudowy
+                    kuchennej, stolarki drzwiowej i innych elementów
+                    stolarskich,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">dokumentację ślusarki oraz detali wykończeniowych,</li>
+                  <li class="scroll-trigger scroll-opacity">
+                    rysunki szczegółowe łazienek i kuchni w skali 1:20,
+                    obejmujące rzuty, przekroje i niezbędne detale.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="line"></div>
+              <div class="dotps">
+                <h4>IX</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">KOREKTA RYSUNKÓW TECHNICZNYCH</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Po opracowaniu projektu technicznego Klient ma możliwość
+                  jednorazowego zgłoszenia uwag i sugestii. Wprowadzamy
+                  niezbędne korekty w rysunkach- modyfikacje wymiarów, układu
+                  elementów, detali stolarskich, instalacji. Celem jest
+                  dopracowanie dokumentacji tak, aby była w pełni zgodna z
+                  oczekiwaniami Klienta.
+                </p>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="dotps">
+                <h4>X</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">ZESTAWIENIE MATERIAŁÓW I KOSZTORYS</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Na podstawie zatwierdzonego projektu technicznego
+                  przygotowujemy szczegółowe zestawienie materiałów oraz
+                  kosztorys całej inwestycji. Dokumentacja obejmuje:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">
+                    dokładną ilość wszystkich materiałów potrzebnych do
+                    realizacji projektu,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">podział materiałów według rodzaju i pomieszczeń,</li>
+                  <li class="scroll-trigger scroll-opacity">wskazanie miejsc zakupu,</li>
+                  <li class="scroll-trigger scroll-opacity">
+                    wycenę wszystkich elementów użytych w projekcie, w tym
+                    materiałów i produktów na zamówienie,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    wycenę usług wykonywanych przez podwykonawców, niezbędnych
+                    do realizacji projektu.
+                  </li>
+                </ul>
+                <p class="scroll-trigger scroll-opacity">
+                  Zestawienie materiałów i kosztorys zapewniają pełną kontrolę
+                  nad inwestycją oraz przejrzystość wszystkich elementów
+                  projektu, ułatwiając sprawną realizację wnętrza zgodnie z
+                  koncepcją.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="offer-box-bottom-in">
+            <h3 class="scroll-trigger scroll-opacity">PRZEBIEG WSPÓŁPRACY</h3>
+            <ol class="offer-ol">
+              <li class="scroll-trigger scroll-opacity">
+                ROZMOWA WSTĘPNA
+                <p>
+                  Na początku przeprowadzamy krótką rozmowę, podczas której
+                  poznajemy potrzeby, styl życia i oczekiwania dotyczące
+                  przestrzeni Klienta. Ustalamy ogólny kierunek prac oraz zakres
+                  usługi.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                INDYWIDUALNA ANKIETA I MATERIAŁY OD KLIENTA
+                <p>
+                  Klient otrzymuje indywidualną ankietę oraz prośbę o
+                  przekazanie rzutów architektonicznych, zdjęć lub nagrania
+                  wideo przestrzeni. Materiały te stanowią podstawę do
+                  przygotowania układów funkcjonalnych.
+                </p>
+                <p>
+                  W razie potrzeby możliwe jest również przeprowadzenie
+                  inwentaryzacji wnętrza, aby uzyskać precyzyjne i aktualne
+                  wymiary.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                PRZYGOTOWANIE WARIANTÓW UKŁADÓW FUNKCJONALNYCH
+                <p>
+                  Na podstawie wszystkich informacji opracowujemy 2-3 propozycje
+                  układów funkcjonalnych w rzucie 2D. Każdy wariant przedstawia
+                  inny sposób zagospodarowania przestrzeni- podziały
+                  pomieszczeń, ustawienie funkcji oraz rozmieszczenie kluczowych
+                  elementów wyposażenia.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                SPOTKANIE KONSULTACYJNE
+                <p>
+                  Podczas spotkania omawiane są przygotowane warianty.
+                  Wskazujemy ich możliwości, ograniczenia oraz potencjał.
+                  Wspólnie z Klientem wybieramy kierunek, który najlepiej
+                  odpowiada oczekiwaniom, uwzględniając styl życia, budżet, cele
+                  funkcjonalne oraz preferencje stylistyczne.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                FINALIZACJA UKŁADÓW FUNKCJONALNYCH
+                <p>
+                  Po spotkaniu nanosimy uzgodnione poprawki i przekazujemy
+                  finalny układ funkcjonalny- precyzyjny, przemyślany i gotowy
+                  do dalszego etapu projektowania.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                WIZUALIZACJA PRZESTRZENI
+                <p>
+                  Na podstawie zatwierdzonego układu przygotowujemy szczegółowe
+                  wizualizacje 3D, które prezentują stylistykę wnętrza, dobór
+                  kolorów, materiałów, proporcje oraz charakter przestrzeni jako
+                  całości.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                KOREKTA WIZUALIZACJI
+                <p>
+                  Po prezentacji wizualizacji Klient może zgłosić poprawki.
+                  Wprowadzamy jedną turę zmian, dopracowując kolorystykę, układ
+                  mebli, oświetlenie oraz detale, aby projekt w pełni odpowiadał
+                  założeniom.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                PROJEKT TECHNICZNY
+                <p>
+                  Po zatwierdzeniu wizualizacji przygotowujemy kompletny projekt
+                  techniczny, stanowiący precyzyjną instrukcję do realizacji
+                  wnętrza.
+                </p>
+                <p>
+                  Teczka projektu zawiera szczegółowe rysunki i dokumentację
+                  niezbędną do wykonania wszystkich elementów:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">rysunki budowlane ścian i sufitów,</li>
+                  <li class="scroll-trigger scroll-opacity">
+                    dokumentację instalacji wodno-kanalizacyjnej, elektrycznej i
+                    wentylacyjnej,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    rozrys okładzin ściennych, posadzek oraz elementów
+                    kamiennych i szklanych,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    szczegółowe projekty mebli na zamówienie, zabudowy
+                    kuchennej, stolarki drzwiowej i innych elementów
+                    stolarskich,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">dokumentację ślusarki oraz detali wykończeniowych,</li>
+                  <li class="scroll-trigger scroll-opacity">
+                    rysunki szczegółowe łazienek i kuchni w skali 1:20,
+                    obejmujące rzuty, przekroje i niezbędne detale.
+                  </li>
+                </ul>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                KOREKTA RYSUNKÓW TECHNICZNYCH
+                <p>
+                  Po opracowaniu projektu technicznego Klient ma możliwość
+                  jednorazowego zgłoszenia uwag i sugestii. Wprowadzamy
+                  niezbędne korekty w rysunkach- modyfikacje wymiarów, układu
+                  elementów, detali stolarskich, instalacji. Celem jest
+                  dopracowanie dokumentacji tak, aby była w pełni zgodna z
+                  oczekiwaniami Klienta.
+                </p>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                ZESTAWIENIE MATERIAŁÓW I KOSZTORYS
+                <p>
+                  Na podstawie zatwierdzonego projektu technicznego
+                  przygotowujemy szczegółowe zestawienie materiałów oraz
+                  kosztorys całej inwestycji. Dokumentacja obejmuje:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">
+                    dokładną ilość wszystkich materiałów potrzebnych do
+                    realizacji projektu,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">podział materiałów według rodzaju i pomieszczeń,</li>
+                  <li class="scroll-trigger scroll-opacity">wskazanie miejsc zakupu,</li>
+                  <li class="scroll-trigger scroll-opacity">
+                    wycenę wszystkich elementów użytych w projekcie, w tym
+                    materiałów i produktów na zamówienie,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    wycenę usług wykonywanych przez podwykonawców, niezbędnych
+                    do realizacji projektu.
+                  </li>
+                </ul>
+                <p class="scroll-trigger scroll-opacity">
+                  Zestawienie materiałów i kosztorys zapewniają pełną kontrolę
+                  nad inwestycją oraz przejrzystość wszystkich elementów
+                  projektu, ułatwiając sprawną realizację wnętrza zgodnie z
+                  koncepcją.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-box">
+        <div id="card-2" class="offer-box-top">
+          <h2 class="scroll-trigger scroll-opacity">NADZÓR AUTORSKI</h2>
+          <div class="span-box"><span></span><span></span></div>
+        </div>
+        <div id="cardb-2" class="offer-box-bottom">
+          <div
+            class="offer-box-bottom-in"
+            style="visibility: visible; position: relative"
+          >
+            <p class="scroll-trigger scroll-opacity">
+              Do projektu kompleksowego oferujemy możliwość skorzystania z
+              nadzoru autorskiego, który pozwala zachować spójność wizji i
+              dopilnować realizacji wnętrza zgodnie z projektem. Proponujemy
+              dwie wygodne opcje:
+            </p>
+          </div>
+
+          <div class="timelineps-mobile">
+            <div class="mob-box">
+              <div class="dotps">
+                <h4>I</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">KONSULTACYJNY – PODSTAWOWY</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Idealny dla Klientów, którzy potrzebują wsparcia w kluczowych
+                  momentach realizacji. Obejmuje:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">
+                    konsultacje telefoniczne i mailowe po przekazaniu projektu,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    uzgadnianie możliwości wprowadzania rozwiązań zamiennych,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    dwie wizyty na budowie w celu kontroli zgodności prac z
+                    projektem.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mob-box">
+              <div class="dotps">
+                <h4>II</h4>
+              </div>
+              <div class="text">
+                <h3 class="scroll-trigger scroll-opacity">KOMPLEKSOWY - PEŁNY</h3>
+                <p class="scroll-trigger scroll-opacity">
+                  Dla Klientów, którzy chcą mieć pełną kontrolę nad każdym
+                  etapem realizacji. Obejmuje:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">
+                    konsultacje telefoniczne i mailowe po przekazaniu projektu,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    uzgadnianie możliwości wprowadzania rozwiązań zamiennych,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    sześć wizyt na budowie z kontrolą prac remontowych i
+                    zgodności z projektem.
+                  </li>
+                </ul>
+                <p class="scroll-trigger scroll-opacity">
+                  Nadzór autorski zapewnia bieżące wsparcie i pewność, że
+                  wnętrze powstaje dokładnie tak, jak zaplanowano, od koncepcji
+                  po finalny efekt.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="offer-box-bottom-in">
+            <ol class="offer-ol">
+              <li class="scroll-trigger scroll-opacity">
+                KONSULTACYJNY - PODSTAWOWY
+                <p>
+                  Idealny dla Klientów, którzy potrzebują wsparcia w kluczowych
+                  momentach realizacji. Obejmuje:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">
+                    konsultacje telefoniczne i mailowe po przekazaniu projektu,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    uzgadnianie możliwości wprowadzania rozwiązań zamiennych,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    dwie wizyty na budowie w celu kontroli zgodności prac z
+                    projektem.
+                  </li>
+                </ul>
+              </li>
+              <li class="scroll-trigger scroll-opacity">
+                KOMPLEKSOWY - PEŁNY
+                <p>
+                  Dla Klientów, którzy chcą mieć pełną kontrolę nad każdym
+                  etapem realizacji. Obejmuje:
+                </p>
+                <ul>
+                  <li class="scroll-trigger scroll-opacity">
+                    konsultacje telefoniczne i mailowe po przekazaniu projektu,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    uzgadnianie możliwości wprowadzania rozwiązań zamiennych,
+                  </li>
+                  <li class="scroll-trigger scroll-opacity">
+                    sześć wizyt na budowie z kontrolą prac remontowych i
+                    zgodności z projektem.
+                  </li>
+                </ul>
+                <p class="scroll-trigger scroll-opacity">
+                  Nadzór autorski zapewnia bieżące wsparcie i pewność, że
+                  wnętrze powstaje dokładnie tak, jak zaplanowano, od koncepcji
+                  po finalny efekt.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    
