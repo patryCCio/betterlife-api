@@ -6,6 +6,9 @@ import dotenv from "dotenv";
 
 // trasy
 import todoRoutes from "./routes/task.route.js";
+import userRoutes from "./routes/user.route.js";
+import awardRoutes from "./routes/award.route.js";
+import routineRoutes from "./routes/routine.route.js";
 import path from "path";
 
 import { connectDB } from "./config/db.js"; // jeśli masz connectDB
@@ -27,6 +30,10 @@ const initServer = (port) => {
 
   // trasy
   app.use(prefixApi + "todos", todoRoutes);
+  app.use(prefixApi + "user", userRoutes);
+  app.use(prefixApi + "awards", awardRoutes);
+  app.use(prefixApi + "routines", routineRoutes);
+
   app.listen(port, () => {
     console.log("The server is listening at " + port);
   });
