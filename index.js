@@ -9,6 +9,7 @@ import todoRoutes from "./routes/task.route.js";
 import userRoutes from "./routes/user.route.js";
 import awardRoutes from "./routes/award.route.js";
 import routineRoutes from "./routes/routine.route.js";
+import scoreRoutes from "./routes/score.route.js";
 import path from "path";
 
 import { connectDB } from "./config/db.js"; // jeśli masz connectDB
@@ -33,6 +34,7 @@ const initServer = (port) => {
   app.use(prefixApi + "user", userRoutes);
   app.use(prefixApi + "awards", awardRoutes);
   app.use(prefixApi + "routines", routineRoutes);
+  app.use(prefixApi + "scores", scoreRoutes);
 
   app.listen(port, () => {
     console.log("The server is listening at " + port);
