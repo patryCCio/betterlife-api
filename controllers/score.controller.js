@@ -1,3 +1,4 @@
+import { RoutineDay } from "../models/routineday.model.js";
 import { Score } from "../models/score.model.js";
 
 export const getScores = async (req, res) => {
@@ -52,9 +53,9 @@ export const addScore = async (req, res) => {
       let label = "";
 
       if (type == "routine") {
-        label = `Add points for routine "${additionalInfo}"!`;
-      } else if (type == "awards") {
-        label = `Get points for award "${additionalInfo}"!`;
+        label = `Add points for routine "${additionalInfo.text}"!`;
+      } else if (type == "award") {
+        label = `Get points for award "${additionalInfo.text}"!`;
       }
 
       const score = new Score({
@@ -64,6 +65,15 @@ export const addScore = async (req, res) => {
       });
 
       await score.save();
+
+      if (type == "routine") {
+        const routineDay = new RoutineDay({
+          user_uuid,
+          routine_uuid: additionalInfo.routine_uuid
+        })
+
+        await routineDay.save();
+      }
     }
 
     res.status(200).json("ok!");

@@ -1,10 +1,41 @@
 import { Routine } from "../models/routine.model.js";
+import { RoutineDay } from "../models/routineday.model.js";
 
 export const getRoutine = async (req, res) => {
+
+    const { user_uuid } = req.query;
+
     try {
+        const now = new Date();
+
+        // początek dnia
+        const start = new Date(now);
+        start.setHours(0, 0, 0, 0);
+
+        // koniec dnia
+        const end = new Date(now);
+        end.setHours(23, 59, 59, 999);
+
+        const routineDay = await RoutineDay.find({
+            user_uuid: user_uuid,
+            createdAt: {
+                $gte: start,
+                $lte: end
+            }
+        });
+
         const routines = await Routine.find();
 
-        res.status(200).json(routines);
+        const doneSet = new Set(routineDay.map(r => r.routine_uuid));
+
+        const array = routines.map(r => ({
+            ...r._doc,
+            done: doneSet.has(r.uuid)
+        }));
+
+        console.log(array);
+
+        res.status(200).json(array);
     } catch (error) {
         res.status(500).json({ message: "Server error" });
     }
