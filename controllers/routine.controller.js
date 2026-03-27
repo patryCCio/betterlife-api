@@ -33,7 +33,6 @@ export const getRoutine = async (req, res) => {
             done: doneSet.has(r.uuid)
         }));
 
-        console.log(array);
 
         res.status(200).json(array);
     } catch (error) {
