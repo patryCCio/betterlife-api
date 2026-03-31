@@ -1,15 +1,6 @@
 import { Task } from "../models/task.model.js";
 
-// 🔧 helper – budowanie drzewa
-const buildTree = (tasks, parentId = null) => {
-  return tasks
-    .filter((t) => t.parentId === parentId)
-    .map((t) => ({
-      ...t._doc,
-      subtask: buildTree(tasks, t.uuid),
-    }));
-};
-
+// 🔧 helper – dzieci
 const getAllChildren = (tasks, parentId) => {
   let result = [];
 
@@ -25,7 +16,9 @@ const getAllChildren = (tasks, parentId) => {
   return result;
 };
 
+// 📥 GET TODOS
 export const getTodos = async (req, res) => {
+  const { user_uuid } = req.params;
   const {
     btnState = "all",
     sortBy = "none",
@@ -35,13 +28,11 @@ export const getTodos = async (req, res) => {
   } = req.query;
 
   try {
-    // 🔧 filtr rootów
-    let filter = {};
+    let filter = { user_uuid };
 
     if (btnState === "done") filter.done = true;
     if (btnState === "undone") filter.done = false;
 
-    // 🔧 filtr subtasków
     let subtaskFilter = {};
 
     if (subtaskTodo === "done") subtaskFilter.done = true;
@@ -58,60 +49,56 @@ export const getTodos = async (req, res) => {
 
     const skip = (page - 1) * limit;
 
-    // ✅ 1. rooty
-    const roots = await Task.find({ ...filter, parentId: null })
+    // rooty
+    const roots = await Task.find({
+      ...filter,
+      parentId: null,
+    })
       .sort(sortOptions[sortBy] || {})
       .skip(skip)
       .limit(Number(limit));
 
     const rootIds = roots.map((r) => r.uuid);
 
-    // ✅ 2. rekurencja z filtrem subtasków
+    // rekurencja
     async function getAllDescendants(parentIds) {
       const children = await Task.find({
         parentId: { $in: parentIds },
-        ...subtaskFilter, // 👈 KLUCZOWE
+        user_uuid,
+        ...subtaskFilter,
       });
 
       if (!children.length) return [];
 
       const childIds = children.map((c) => c.uuid);
-
       const deeper = await getAllDescendants(childIds);
 
       return [...children, ...deeper];
     }
 
     const descendants = await getAllDescendants(rootIds);
-
     const allTasks = [...roots, ...descendants];
 
-    // ✅ 3. budowanie drzewa
-    function buildTree(tasks) {
-      const map = {};
-      const tree = [];
+    // 🌳 budowanie drzewa
+    const map = {};
+    const tree = [];
 
-      tasks.forEach((task) => {
-        map[task.uuid] = {
-          ...task.toObject(),
-          subtask: [],
-        };
-      });
+    allTasks.forEach((task) => {
+      map[task.uuid] = {
+        ...task.toObject(),
+        subtask: [],
+      };
+    });
 
-      tasks.forEach((task) => {
-        if (task.parentId) {
-          if (map[task.parentId]) {
-            map[task.parentId].subtask.push(map[task.uuid]);
-          }
-        } else {
-          tree.push(map[task.uuid]);
+    allTasks.forEach((task) => {
+      if (task.parentId) {
+        if (map[task.parentId]) {
+          map[task.parentId].subtask.push(map[task.uuid]);
         }
-      });
-
-      return tree;
-    }
-
-    const tree = buildTree(allTasks);
+      } else {
+        tree.push(map[task.uuid]);
+      }
+    });
 
     const total = await Task.countDocuments({
       ...filter,
@@ -124,9 +111,10 @@ export const getTodos = async (req, res) => {
   }
 };
 
-// ➕ ADD TASK / SUBTASK
+// ➕ ADD
 export const addTask = async (req, res) => {
   try {
+    const { user_uuid } = req.params;
     const { title, priority, deadline, parentId = null } = req.body;
 
     const task = await Task.create({
@@ -136,6 +124,7 @@ export const addTask = async (req, res) => {
       deadline: deadline || null,
       done: false,
       parentId,
+      user_uuid,
     });
 
     res.json(task);
@@ -144,12 +133,12 @@ export const addTask = async (req, res) => {
   }
 };
 
-// ✏️ EDIT
+// ✏️ UPDATE
 export const updateTask = async (req, res) => {
   try {
-    const { uuid } = req.params;
+    const { uuid, user_uuid } = req.params;
 
-    const updated = await Task.findOneAndUpdate({ uuid }, req.body, {
+    const updated = await Task.findOneAndUpdate({ uuid, user_uuid }, req.body, {
       new: true,
     });
 
@@ -159,20 +148,26 @@ export const updateTask = async (req, res) => {
   }
 };
 
-// ✅ TOGGLE DONE (+ wszystkie dzieci)
+// ✅ TOGGLE
 export const toggleDone = async (req, res) => {
   try {
-    const { uuid } = req.params;
+    const { uuid, user_uuid } = req.params;
 
-    const allTasks = await Task.find();
+    const allTasks = await Task.find({ user_uuid });
     const task = allTasks.find((t) => t.uuid === uuid);
 
-    const newDone = !task.done;
+    if (!task) {
+      return res.status(404).json({ message: "Task not found" });
+    }
 
+    const newDone = !task.done;
     const childrenIds = getAllChildren(allTasks, uuid);
 
     await Task.updateMany(
-      { uuid: { $in: [uuid, ...childrenIds] } },
+      {
+        uuid: { $in: [uuid, ...childrenIds] },
+        user_uuid,
+      },
       { done: newDone },
     );
 
@@ -182,16 +177,17 @@ export const toggleDone = async (req, res) => {
   }
 };
 
-// 🗑️ DELETE (+ całe poddrzewo)
+// 🗑️ DELETE
 export const deleteTask = async (req, res) => {
   try {
-    const { uuid } = req.params;
+    const { uuid, user_uuid } = req.params;
 
-    const allTasks = await Task.find();
+    const allTasks = await Task.find({ user_uuid });
     const childrenIds = getAllChildren(allTasks, uuid);
 
     await Task.deleteMany({
       uuid: { $in: [uuid, ...childrenIds] },
+      user_uuid,
     });
 
     res.json({ success: true });

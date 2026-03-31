@@ -1,5 +1,9 @@
 import express from "express";
-import { addAward, deleteAward, getAwards } from "../controllers/award.controller.js";
+import {
+  addAward,
+  deleteAward,
+  getAwards,
+} from "../controllers/award.controller.js";
 
 const router = express.Router();
 

@@ -12,6 +12,7 @@ const ScoreSchema = new mongoose.Schema(
       type: String,
       ref: "User",
       required: true,
+      index: true,
     },
     points: {
       type: Number,
