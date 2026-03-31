@@ -20,6 +20,15 @@ const UserSchema = new mongoose.Schema(
             trim: true,
             minlength: 1
         },
+        password: {
+            type: String,
+            required: true,
+        },
+        email: {
+            type: String,
+            required: true,
+            unique: true,
+        },
         points: {
             type: Number,
             default: 0
