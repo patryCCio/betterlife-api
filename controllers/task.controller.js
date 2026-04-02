@@ -117,6 +117,8 @@ export const addTask = async (req, res) => {
     const { user_uuid } = req.params;
     const { title, priority, deadline, parentId = null } = req.body;
 
+    console.log(deadline);
+
     const task = await Task.create({
       uuid: Date.now().toString(),
       title,

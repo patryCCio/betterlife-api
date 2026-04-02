@@ -14,7 +14,6 @@ import path from "path";
 
 import { connectDB } from "./config/db.js"; // jeśli masz connectDB
 
-
 dotenv.config();
 
 const initServer = (port) => {
@@ -27,7 +26,9 @@ const initServer = (port) => {
   app.use(cookieParser());
   app.use(cors());
 
-  connectDB().catch(err => console.error("Mongo connect error:", err));
+  app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
+
+  connectDB().catch((err) => console.error("Mongo connect error:", err));
 
   // trasy
   app.use(prefixApi + "todos", todoRoutes);
