@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "type": "block",
+    "styles": {
+      "padding": "0",
+      "display": "flex",
+      "justifyContent": "space-between",
+      "flexDirection": "column",
+      "gap": "20px"
+    },
+    "children": [
+      {
+        "id": 1775419487220,
+        "type": "title",
+        "content": "Brutalizm weee",
+        "styles": {
+          "fontSize": "32px",
+          "margin": "0 0 30px 0"
+        },
+        "children": []
+      },
+      {
+        "id": 1775422927756,
+        "type": "title",
+        "content": "Co to jest brutalizm -   O   -?",
+        "styles": {
+          "fontSize": "20px"
+        },
+        "children": []
+      },
+      {
+        "id": 1775419553470,
+        "type": "block",
+        "styles": {
+          "padding": "0",
+          "display": "flex",
+          "justifyContent": "space-around",
+          "gap": "20px",
+          "margin": "0 0 30px 0"
+        },
+        "children": [
+          {
+            "id": 1775417907420,
+            "type": "text",
+            "content": "Brutalizm jest to nurt w architekturze późnego modernizmu (lata 50-70 XX w.), cechujący się surowością, masywnymi formami i eksponowaniem nieociosanego betonu. Styl był dla odrażający, surowy, zbyt mało dekoracyjny, lecz dla mnie posiada coś w sobie. Przez swoje ukształtowania, przeróżne kształty jest nie typowy.",
+            "styles": {
+              "width": "100%",
+              "fontSize": "",
+              "color": "#000000"
+            },
+            "children": []
+          },
+          {
+            "id": 1775420406466,
+            "type": "text",
+            "content": "",
+            "styles": {
+              "width": "100%"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 1775423302367,
+        "type": "block",
+        "styles": {
+          "padding": "0",
+          "display": "flex",
+          "flexDirection": "column",
+          "gap": "20px"
+        },
+        "children": [
+          {
+            "id": 1775423409860,
+            "type": "title",
+            "content": "W jakich krajach najczęściej jest spotykany?",
+            "styles": {
+              "fontSize": "20px"
+            },
+            "children": []
+          },
+          {
+            "id": 1775423396029,
+            "type": "block",
+            "styles": {
+              "padding": "0",
+              "display": "flex",
+              "gap": "20px"
+            },
+            "children": [
+              {
+                "id": 1775423389057,
+                "type": "image",
+                "content": "https://greenblue.com/wp-content/uploads/2020/09/P1220526-1024x683.jpg",
+                "styles": {
+                  "width": "70%"
+                },
+                "children": []
+              },
+              {
+                "id": 1775423716616,
+                "type": "block",
+                "styles": {
+                  "padding": "0",
+                  "width": "30%",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": "20px"
+                },
+                "children": [
+                  {
+                    "id": 1775423781410,
+                    "type": "title",
+                    "content": "Wielka Brytania",
+                    "styles": {
+                      "fontSize": "20px"
+                    }
+                  },
+                  {
+                    "id": 1775423838764,
+                    "type": "text",
+                    "content": "No generalnie tutaj się wszystko zaczeło się nie. Kolebka kurwa początek wiesz o co chodzi.",
+                    "styles": {}
+                  },
+                  {
+                    "id": 1775424220217,
+                    "type": "image",
+                    "content": "https://upload.wikimedia.org/wikipedia/commons/4/41/The_National_Theatre%2C_South_Bank%2C_London_-_geograph.org.uk_-_1861458.jpg",
+                    "styles": {}
+                  },
+                  {
+                    "id": 1775424249084,
+                    "type": "text",
+                    "content": "National Theathre w Londynie",
+                    "styles": {
+                      "margin": "-10px 0 0 0",
+                      "fontSize": "12px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
