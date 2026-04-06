@@ -9,7 +9,13 @@ const DEFAULT_ELEMENTS = [
   {
     id: 1,
     type: "block",
-    styles: { padding: "20px" },
+    styles: {
+      padding: "20px",
+      display: "flex",
+      flexDirection: "column",
+      gap: 20,
+      overflowX: "hidden",
+    },
     children: [],
   },
 ];

@@ -3,7 +3,9 @@
     "id": 1,
     "type": "block",
     "styles": {
-      "padding": "20px"
+      "padding": "20px",
+      "display": "flex",
+      "flexDirection": "column"
     },
     "children": []
   }

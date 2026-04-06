@@ -13,10 +13,12 @@
       {
         "id": 1775419487220,
         "type": "title",
-        "content": "Brutalizm weee",
+        "content": "Brutalizm",
         "styles": {
+          "textAlign": "start",
           "fontSize": "32px",
-          "margin": "0 0 30px 0"
+          "margin": "0 0 30px 0",
+          "overflowX": "hidden"
         },
         "children": []
       },
@@ -25,6 +27,7 @@
         "type": "title",
         "content": "Co to jest brutalizm -   O   -?",
         "styles": {
+          "textAlign": "start",
           "fontSize": "20px"
         },
         "children": []
@@ -47,16 +50,19 @@
             "styles": {
               "width": "100%",
               "fontSize": "",
-              "color": "#000000"
+              "color": "#000000",
+              "textAlign": "justify"
             },
-            "children": []
+            "children": [],
+            "classes": "sdadasd"
           },
           {
             "id": 1775420406466,
             "type": "text",
             "content": "",
             "styles": {
-              "width": "100%"
+              "width": "100%",
+              "textAlign": "start"
             },
             "children": []
           }
@@ -69,7 +75,8 @@
           "padding": "0",
           "display": "flex",
           "flexDirection": "column",
-          "gap": "20px"
+          "gap": "20px",
+          "justifyContent": "flex-start"
         },
         "children": [
           {
@@ -77,6 +84,7 @@
             "type": "title",
             "content": "W jakich krajach najczęściej jest spotykany?",
             "styles": {
+              "textAlign": "start",
               "fontSize": "20px"
             },
             "children": []
@@ -85,9 +93,10 @@
             "id": 1775423396029,
             "type": "block",
             "styles": {
-              "padding": "0",
+              "padding": "",
               "display": "flex",
-              "gap": "20px"
+              "gap": "20px",
+              "justifyContent": "space-between"
             },
             "children": [
               {
@@ -95,7 +104,14 @@
                 "type": "image",
                 "content": "https://greenblue.com/wp-content/uploads/2020/09/P1220526-1024x683.jpg",
                 "styles": {
-                  "width": "70%"
+                  "width": "65%",
+                  "minHeight": "",
+                  "maxHeight": "",
+                  "objectFit": "cover",
+                  "objectPosition": "",
+                  "top": "",
+                  "position": "relative",
+                  "left": ""
                 },
                 "children": []
               },
@@ -103,41 +119,81 @@
                 "id": 1775423716616,
                 "type": "block",
                 "styles": {
-                  "padding": "0",
+                  "padding": "",
                   "width": "30%",
                   "display": "flex",
                   "flexDirection": "column",
-                  "gap": "20px"
+                  "gap": "20px",
+                  "justifyContent": "space-between",
+                  "flex": "1",
+                  "overflowX": "hidden"
                 },
                 "children": [
                   {
-                    "id": 1775423781410,
-                    "type": "title",
-                    "content": "Wielka Brytania",
+                    "id": 1775507229250,
+                    "type": "block",
                     "styles": {
-                      "fontSize": "20px"
-                    }
+                      "padding": "0",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "20px"
+                    },
+                    "children": [
+                      {
+                        "id": 1775423781410,
+                        "type": "title",
+                        "content": "Wielka Brytania",
+                        "styles": {
+                          "fontSize": "20px",
+                          "textAlign": "start",
+                          "position": "relative",
+                          "top": "",
+                          "right": ""
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": 1775423838764,
+                        "type": "text",
+                        "content": "No generalnie tutaj się wszystko zaczeło się nie. Kolebka kurwa początek wiesz o co chodzi.",
+                        "styles": {
+                          "textAlign": "justify",
+                          "position": "relative",
+                          "left": ""
+                        },
+                        "children": []
+                      }
+                    ]
                   },
                   {
-                    "id": 1775423838764,
-                    "type": "text",
-                    "content": "No generalnie tutaj się wszystko zaczeło się nie. Kolebka kurwa początek wiesz o co chodzi.",
-                    "styles": {}
-                  },
-                  {
-                    "id": 1775424220217,
-                    "type": "image",
-                    "content": "https://upload.wikimedia.org/wikipedia/commons/4/41/The_National_Theatre%2C_South_Bank%2C_London_-_geograph.org.uk_-_1861458.jpg",
-                    "styles": {}
-                  },
-                  {
-                    "id": 1775424249084,
-                    "type": "text",
-                    "content": "National Theathre w Londynie",
+                    "id": 1775507271503,
+                    "type": "block",
                     "styles": {
-                      "margin": "-10px 0 0 0",
-                      "fontSize": "12px"
-                    }
+                      "padding": "0",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "5px"
+                    },
+                    "children": [
+                      {
+                        "id": 1775424220217,
+                        "type": "image",
+                        "content": "https://upload.wikimedia.org/wikipedia/commons/4/41/The_National_Theatre%2C_South_Bank%2C_London_-_geograph.org.uk_-_1861458.jpg",
+                        "styles": {},
+                        "children": []
+                      },
+                      {
+                        "id": 1775424249084,
+                        "type": "text",
+                        "content": "National Theathre w Londynie",
+                        "styles": {
+                          "margin": "",
+                          "fontSize": "12px",
+                          "textAlign": "end"
+                        },
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               }
