@@ -10,11 +10,7 @@ const DEFAULT_ELEMENTS = [
     id: 1,
     type: "block",
     styles: {
-      padding: "20px",
-      display: "flex",
-      flexDirection: "column",
-      gap: 20,
-      overflowX: "hidden",
+      padding: "10px", display: "flex", flexDirection: "column", position: "relative", gap: "20px", overflowX: "hidden", overflowY: "auto"
     },
     children: [],
   },

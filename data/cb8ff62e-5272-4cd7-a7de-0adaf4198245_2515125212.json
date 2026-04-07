@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "type": "block",
+    "styles": {
+      "padding": "0",
+      "display": "flex",
+      "flexDirection": "column",
+      "position": "relative",
+      "gap": "20px",
+      "overflowX": "hidden",
+      "overflowY": "auto"
+    },
+    "children": [
+      {
+        "id": 1775558613612,
+        "type": "title",
+        "content": "Baza księżycowa",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "start",
+          "fontSize": "32px",
+          "margin": "0 0 30px 0"
+        },
+        "children": []
+      },
+      {
+        "id": 1775559104659,
+        "type": "block",
+        "styles": {
+          "padding": "0",
+          "display": "flex",
+          "flexDirection": "row",
+          "position": "relative",
+          "gap": "20px",
+          "overflowX": "hidden",
+          "overflowY": "auto",
+          "justifyContent": "space-between"
+        },
+        "children": [
+          {
+            "id": 1775559116787,
+            "type": "block",
+            "styles": {
+              "padding": "0",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "width": "30%"
+            },
+            "children": [
+              {
+                "id": 1775558663289,
+                "type": "text",
+                "content": "<p>W sumie się tak zastanawiałem co by było, gdyby na księżycu postawić jakąś bazę... Założę się, że istnieje mnóstwo konceptów, które zostały oddalone, zapomniane lub nie jesteśmy na tym etapie, aby cokolwiek wybudować.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "fontSize": "16px",
+                  "lineHeight": "24px"
+                },
+                "children": []
+              },
+              {
+                "id": 1775559192269,
+                "type": "title",
+                "content": "Co moglibyśmy uzyskać z tego tytułu?",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "24px"
+                },
+                "children": [],
+                "typeOf": "h4"
+              },
+              {
+                "id": 1775559392892,
+                "type": "text",
+                "content": "<p>Tak sobie myślę, że istnieje mnóstwo, naprawdę mnóstwo korzyści płynących z tytułu umiejscowienia bazy na księżycu. Założenie jakichś pierwszy kolonii księżycowych zniwelowało by mnóstwo problemów ekonomicznych. Kolejną taką korzyścią płynącą może być zaoszczędzony czas podróży jakichś misji podróży w kosmos. Wyobrażam sobie ile paliwa byśmy byli w stanie zaoszczędzić przez niską grawitację księżyca (1/6 ziemskiej z tego co pamiętam). Nasuwa mi się tylko jedno pytanie (podejrzewam, że tak) mianowicie:</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "fontSize": "16px",
+                  "lineHeight": "24px"
+                },
+                "children": []
+              },
+              {
+                "id": 1775560861650,
+                "type": "title",
+                "content": "Czy księżyc posiada jakieś cenne złoża różnych surowców? ",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "16px"
+                },
+                "children": [],
+                "typeOf": "h6"
+              },
+              {
+                "id": 1775560995047,
+                "type": "text",
+                "content": "<p>Według serwisu \"Space24\", Księżyc posiada liczne złoża cennych surowców kuuurwa mać.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "fontSize": "16px",
+                  "lineHeight": "24px"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 1775559116941,
+            "type": "block",
+            "styles": {
+              "padding": "0",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "width": "50%",
+              "flex": "1",
+              "minWidth": "",
+              "maxWidth": "1000px"
+            },
+            "children": [
+              {
+                "id": 1775559328400,
+                "type": "title",
+                "content": "Koncepty baz księżycowych",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "24px"
+                },
+                "children": [],
+                "typeOf": "h4"
+              }
+            ]
+          }
+        ],
+        "name": "Main"
+      }
+    ]
+  }
+]

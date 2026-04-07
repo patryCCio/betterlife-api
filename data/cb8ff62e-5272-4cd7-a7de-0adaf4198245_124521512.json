@@ -20,7 +20,8 @@
           "margin": "0 0 30px 0",
           "overflowX": "hidden"
         },
-        "children": []
+        "children": [],
+        "typeOf": "h2"
       },
       {
         "id": 1775422927756,
@@ -28,9 +29,10 @@
         "content": "Co to jest brutalizm -   O   -?",
         "styles": {
           "textAlign": "start",
-          "fontSize": "20px"
+          "fontSize": "24px"
         },
-        "children": []
+        "children": [],
+        "typeOf": "h4"
       },
       {
         "id": 1775419553470,
@@ -46,7 +48,7 @@
           {
             "id": 1775417907420,
             "type": "text",
-            "content": "Brutalizm jest to nurt w architekturze późnego modernizmu (lata 50-70 XX w.), cechujący się surowością, masywnymi formami i eksponowaniem nieociosanego betonu. Styl był dla odrażający, surowy, zbyt mało dekoracyjny, lecz dla mnie posiada coś w sobie. Przez swoje ukształtowania, przeróżne kształty jest nie typowy.",
+            "content": "<p>Brutalizm jest to nurt w architekturze późnego modernizmu (lata 50-70 XX w.), cechujący się surowością, masywnymi formami i eksponowaniem nieociosanego betonu. Styl był dla odrażający, surowy, zbyt mało dekoracyjny, lecz dla mnie posiada coś w sobie. Przez swoje ukształtowania, przeróżne kształty jest nie typowy.</p>",
             "styles": {
               "width": "100%",
               "fontSize": "",
@@ -85,9 +87,10 @@
             "content": "W jakich krajach najczęściej jest spotykany?",
             "styles": {
               "textAlign": "start",
-              "fontSize": "20px"
+              "fontSize": "24px"
             },
-            "children": []
+            "children": [],
+            "typeOf": "h4"
           },
           {
             "id": 1775423396029,
@@ -150,16 +153,18 @@
                           "top": "",
                           "right": ""
                         },
-                        "children": []
+                        "children": [],
+                        "typeOf": "h5"
                       },
                       {
                         "id": 1775423838764,
                         "type": "text",
-                        "content": "No generalnie tutaj się wszystko zaczeło się nie. Kolebka kurwa początek wiesz o co chodzi.",
+                        "content": "<p>No generalnie tutaj się wszystko zaczeło się nie. Kolebka kurwa początek wiesz o co chodzi.</p>",
                         "styles": {
                           "textAlign": "justify",
                           "position": "relative",
-                          "left": ""
+                          "left": "",
+                          "backgroundColor": ""
                         },
                         "children": []
                       }
@@ -185,11 +190,11 @@
                       {
                         "id": 1775424249084,
                         "type": "text",
-                        "content": "National Theathre w Londynie",
+                        "content": "<p><em>National Theathre w Londynie</em></p>",
                         "styles": {
                           "margin": "",
                           "fontSize": "12px",
-                          "textAlign": "end"
+                          "textAlign": "start"
                         },
                         "children": []
                       }
