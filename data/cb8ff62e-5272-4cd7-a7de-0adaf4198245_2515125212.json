@@ -156,6 +156,36 @@
                 },
                 "children": [],
                 "typeOf": "h4"
+              },
+              {
+                "id": 1775657220140,
+                "type": "html",
+                "content": "<div class=\"hello\">\n<p>Kurwy na dźwigu</p>\n<button id=\"button\">ok</button>\n</div>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto"
+                }
+              },
+              {
+                "id": 1775657250396,
+                "type": "css",
+                "content": ".hello {\ncolor: red;\nwidth: 100%;\nmin-height: 150px;\n}\n\n.hello:hover {\ncolor: yellow;\n}",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto"
+                }
+              },
+              {
+                "id": 1775658110688,
+                "type": "javascript",
+                "content": "const button = document.querySelector(\"#button\");\n\nbutton.addEventListener(\"click\", () => {\nconsole.log(\"ok\");\n})",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto"
+                }
               }
             ]
           }

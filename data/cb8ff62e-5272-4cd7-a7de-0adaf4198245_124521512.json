@@ -48,7 +48,7 @@
           {
             "id": 1775417907420,
             "type": "text",
-            "content": "<p>Brutalizm jest to nurt w architekturze późnego modernizmu (lata 50-70 XX w.), cechujący się surowością, masywnymi formami i eksponowaniem nieociosanego betonu. Styl był dla odrażający, surowy, zbyt mało dekoracyjny, lecz dla mnie posiada coś w sobie. Przez swoje ukształtowania, przeróżne kształty jest nie typowy.</p>",
+            "content": "<p>Brutalizm jest to nurt w architekturze późnego<strong> </strong>modernizmu (lata 50-70 XX w.), cechujący się surowością, masywnymi formami i eksponowaniem nieociosanego betonu. Styl dla ludzi był odrażający, surowy, zbyt mało dekoracyjny, lecz dla mnie posiada coś w sobie. Przez swoje ukształtowania, przeróżne kształty jest nie typowy.</p>",
             "styles": {
               "width": "100%",
               "fontSize": "",
