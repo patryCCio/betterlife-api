@@ -27,6 +27,34 @@
         "children": []
       },
       {
+        "id": "74b554e4-901e-476a-a03d-4c72a6a4bdd5",
+        "type": "title",
+        "content": "Co potrzebujemy aby wybudować bazę księżycową?",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "start",
+          "fontSize": "24px"
+        },
+        "children": [],
+        "typeOf": "h4"
+      },
+      {
+        "id": "c97c3f85-a72c-4d88-a244-79df230ab0b5",
+        "type": "text",
+        "content": "<p>Zastanawiam się co byśmy potrzebowali, aby skonstruować bazę księżycową. Jest to bardzo obszerny temat, w którym nawet ciężko pomyśleć od czego zacząć. W kontekście bazy księżycowej, przede wszystkim musimy się skupić na podstawowych potrzebach człowieka oraz patrzeć przez pryzmat co zapewnia nam Ziemia. Jakbym to ja miał się znaleźć na Księżycu to napewno chciałbym dostępu do bieżącej <strong>wody</strong> <strong>i tlenu</strong>. Na pewno przydałoby się jakieś schronienie przed panującym w próżni zerowym ciśnieniem oraz schronienie przed jej zabijającą ciszą. Jak się dzisiaj dowiedziałem według artykułu na <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://pl.wikipedia.org/wiki/Ksi%C4%99%C5%BCyc\"><strong>Wikipedii</strong></a>, Księżyc w prawdzie posiada swoją atmosferę ale jest ona miliardy razy rzadzsza niż na Ziemii, więc musimy się chronić 😁. W celu ustalenia co potrzebujemy skupimy się najpierw na naszym obecnym życiu. Zadam sobie pytanie co posiadam niezbędnego do minimalnego funkcjonowania w domu? </p>",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "justify",
+          "fontSize": "16px",
+          "lineHeight": "24px"
+        },
+        "children": []
+      },
+      {
         "id": 1775559104659,
         "type": "block",
         "styles": {
@@ -113,7 +141,7 @@
               {
                 "id": 1775560995047,
                 "type": "text",
-                "content": "<p>Według serwisu \"Space24\", Księżyc posiada liczne złoża cennych surowców kuuurwa mać.</p>",
+                "content": "<p>Według serwisu \"Space24\", Księżyc posiada liczne złoża cennych surowców. Są one celem przyszłych misji księżycowych. Głównymi zasobami naszego kumpla odbijającego światło Słońca jest:</p><ol><li><p><strong>Hel-3 </strong>- rzadko występujący izotop, który znajduje się w regolicie Księżyca (regolit jest to warstwa drobnoziarnistego pyłu i skały powstała przez miliardy lat uderzeń meteorytów). Izotop ten posłużyłby nam w przyszłości jako czyste paliwo do reaktorów fuzji termojądrowych.</p></li><li><p><strong>Lód wodny </strong>- znajduje się w zacienionych kraterach na biegunach Księżyca. Jest to kluczowy minerał, który mocno przysłużyłby się do produkcji wody pitnej niezbędnej do życia, tlenu oraz wodoru jako paliwa rakietowego.</p></li><li><p><strong>Metale i tlen </strong>- w regolicie znajdują się metale takie jak tytan, aluminium, żelazo oraz krzem. Posłużyły by nam do produkcji ogniw słonecznych w celu produkcji energii.</p></li></ol><p></p>",
                 "styles": {
                   "position": "relative",
                   "overflowX": "auto",
@@ -156,36 +184,6 @@
                 },
                 "children": [],
                 "typeOf": "h4"
-              },
-              {
-                "id": 1775657220140,
-                "type": "html",
-                "content": "<div class=\"hello\">\n<p>Kurwy na dźwigu</p>\n<button id=\"button\">ok</button>\n</div>",
-                "styles": {
-                  "position": "relative",
-                  "overflowX": "auto",
-                  "overflowY": "auto"
-                }
-              },
-              {
-                "id": 1775657250396,
-                "type": "css",
-                "content": ".hello {\ncolor: red;\nwidth: 100%;\nmin-height: 150px;\n}\n\n.hello:hover {\ncolor: yellow;\n}",
-                "styles": {
-                  "position": "relative",
-                  "overflowX": "auto",
-                  "overflowY": "auto"
-                }
-              },
-              {
-                "id": 1775658110688,
-                "type": "javascript",
-                "content": "const button = document.querySelector(\"#button\");\n\nbutton.addEventListener(\"click\", () => {\nconsole.log(\"ok\");\n})",
-                "styles": {
-                  "position": "relative",
-                  "overflowX": "auto",
-                  "overflowY": "auto"
-                }
               }
             ]
           }
