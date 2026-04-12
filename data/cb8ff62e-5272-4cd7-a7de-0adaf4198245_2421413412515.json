@@ -3,10 +3,38 @@
     "id": 1,
     "type": "block",
     "styles": {
-      "padding": "20px",
+      "padding": "",
       "display": "flex",
-      "flexDirection": "column"
+      "flexDirection": "column",
+      "gap": "20px"
     },
-    "children": []
+    "children": [
+      {
+        "id": 1775597003241,
+        "type": "title",
+        "content": "Assasin's Creed III",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "start",
+          "fontSize": "32px"
+        },
+        "typeOf": "h2"
+      },
+      {
+        "id": 1775597051522,
+        "type": "title",
+        "content": "Fabuła",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "start",
+          "fontSize": "24px"
+        },
+        "typeOf": "h4"
+      }
+    ]
   }
 ]

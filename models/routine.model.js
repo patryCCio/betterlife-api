@@ -19,9 +19,14 @@ const RoutineSchema = new mongoose.Schema({
     trim: true,
     minlength: 1,
   },
-  cost: {
+  type: {
+    type: String,
+    required: true,
+  },
+  count: {
     type: Number,
     required: true,
+    default: null,
   },
 });
 

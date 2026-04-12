@@ -39,12 +39,13 @@ export const getRoutine = async (req, res) => {
 };
 
 export const addRoutine = async (req, res) => {
-  const { title, cost, user_uuid } = req.body;
+  const { title, type, user_uuid, count } = req.body;
 
   try {
     const routine = new Routine({
       title,
-      cost,
+      type,
+      count,
       user_uuid,
     });
 

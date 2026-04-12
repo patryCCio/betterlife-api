@@ -1,0 +1,617 @@
+[
+  {
+    "id": 1,
+    "type": "block",
+    "styles": {
+      "padding": "",
+      "display": "flex",
+      "flexDirection": "column",
+      "position": "relative",
+      "gap": "20px",
+      "overflowX": "hidden",
+      "overflowY": "auto"
+    },
+    "children": [
+      {
+        "id": 1775765077600,
+        "type": "title",
+        "content": "Genex Tower (Zachodnia Brama Belgradu)",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "start"
+        },
+        "children": []
+      },
+      {
+        "id": 1775765155458,
+        "type": "block",
+        "styles": {
+          "padding": "0",
+          "display": "flex",
+          "flexDirection": "row",
+          "position": "relative",
+          "gap": "20px",
+          "overflowX": "hidden",
+          "overflowY": "auto"
+        },
+        "children": [
+          {
+            "id": 1775765175830,
+            "type": "block",
+            "styles": {
+              "padding": "0",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "flex": "1"
+            },
+            "children": [
+              {
+                "id": 1775765215149,
+                "type": "text",
+                "content": "<p>Genex Tower inaczej zwana też Zachodnią Bramą położona jest w Serbii w mieście Belgrad. Budynek został zaprojektowany w 1977 r. przez <strong>Mihajlo Mitrovicia</strong>, w którym kurwa dupcono po wsze czasy. Walono kurwa wiadra w restauracji na górze, która kurwa jest obrotowa nie. Walił w chuja ten Mihajlo Mitrović spojrzeć na niego nos garbaty to od razu dla poznaki widać że skąpiec żydowski. Tak na dole dla porównania:</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              },
+              {
+                "id": 1775765777351,
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto"
+                },
+                "children": [
+                  {
+                    "id": 1775766593565,
+                    "type": "block",
+                    "styles": {
+                      "padding": "",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "50%"
+                    },
+                    "children": [
+                      {
+                        "id": 1775765788457,
+                        "type": "image",
+                        "content": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbax_mvhB2IbGBFhoFhj5nnw_gqY4qDNs0nvkLeO3CHhRfka0CrF8GtwZExJ3t3Ci8j0y7ms6wt0CMJkhbNJGssK5bUV1mmSNaqvU9EY&s=10",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "width": "",
+                          "objectFit": "cover",
+                          "objectPosition": "25%",
+                          "height": "100%"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": 1775766680405,
+                        "type": "title",
+                        "content": "Mihajlo Mitrović (Karykatura)",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "hidden",
+                          "textAlign": "start",
+                          "fontSize": "16px",
+                          "fontFamily": "'Lato', sans-serif"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1775766594940,
+                    "type": "block",
+                    "styles": {
+                      "padding": "",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "50%"
+                    },
+                    "children": [
+                      {
+                        "id": 1775765788742,
+                        "type": "image",
+                        "content": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzfrgGB7ahDaZ1aR1kz2w8CmWcSN4KE7kDg&s",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "width": ""
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "6700a894-226f-4220-9deb-45f66488fc39",
+                        "type": "title",
+                        "content": "Mihajlo Mitrović (Realizm)",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "hidden",
+                          "textAlign": "start",
+                          "fontSize": "16px",
+                          "fontFamily": "'Lato', sans-serif"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 1775766032437,
+                "type": "text",
+                "content": "<p>A więc tego typu. Tego typu jegomość nie XD Budynek sam był zrobiony w stylu brutalistycznym, który nieco opisałem do jasnej ciasnej. Sam kompleks składa się z dwóch 115 metrowych budynków połączonych łącznikiem co daje nam w rezultacie <strong>bramę</strong>. Budynek został oddany w 1980 roku, ciekawi mnie tylko jak to wyglądało... Przyszedł burmistrz miasta i mówił macie to kurwa, trzymajta, bierta to ode mnie. Właśnie się dowiedziałem, że SFRJ (Socjalistyczna Federacyjna Republika Jugosławii) była silnie nacechowana ideologią socjalistyczną i miały takie aspekty, gdzie były wzbogacane jakimiś uroczystościami takie oddawanie budynków. Czyli podejrzewam, że mogło być jakieś przecięcie wstęgi XD Niestety według źródeł \"gemini\" nie ma oficjalnych danych, jakoby taki fakt został dokonany. Byłoby to śmieszne w sumie jakby tak machnęli wstęge gdzieś kurwa na górze pomiędzy budynkami i ciachnęli sobie. Wyobrażam sobie jakby ta wstęga jeszcze upadła (musiałby być to niezły materiał i spadł na ludzi). Potem awantura na cały kraj, że w chuj ludzi w szpitalach.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 1775765167769,
+            "type": "image",
+            "content": "https://s3.eu-central-1.amazonaws.com/pressland-cms/cache/article_show_section_image/8h/800px-jugotours-beograd-dec-2003.jpeg",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "minWidth": "400px"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 1775767312156,
+        "type": "block",
+        "styles": {
+          "padding": "",
+          "display": "flex",
+          "flexDirection": "row",
+          "position": "relative",
+          "gap": "20px",
+          "overflowX": "hidden",
+          "overflowY": "auto"
+        },
+        "children": [
+          {
+            "id": 1775767317347,
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "flex": "1"
+            },
+            "children": [
+              {
+                "id": 1775767382814,
+                "type": "title",
+                "content": "Restauracja ",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "24px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "typeOf": "h4",
+                "children": []
+              },
+              {
+                "id": "56cce13d-b3de-4335-9240-f6c1050d54b4",
+                "type": "text",
+                "content": "<p></p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              },
+              {
+                "id": 1775770395718,
+                "type": "image",
+                "content": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrH39pFfjXYt-9V3vpduCPWyT3QjfPLVEzBQ&s",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto"
+                },
+                "children": []
+              },
+              {
+                "id": "651ea159-be21-441a-93e9-7d9c36910c89",
+                "type": "text",
+                "content": "<p>Restauracja obecnie jest opuszczona, podobno podawane były tam wiadomo Serbskie potrawy. W sumie tak patrzę to dużo ich musiało być (tak mi się wydaje) najbardziej na tamte czasy (lata 80) znanymi były (według GEMINI):</p><ul><li><p>Ćevapi / Ćevapčići - grillowane paluszki z mielonego mięsa podawane z cebulą i chlebkiem lepinja</p></li><li><p>Pljeskavica - serbski \"hamburger\", czyli grillowany kotlet z mielonego mięsa ( co oni kurwa mieli z tym mielonym mięsem) często z dodatkiem sera lub boczku kurwa</p></li><li><p>Sarma (prawie jak Sperrrma) - kiszone liście kapusty nadziewane mielonym mięsem z ryżem (no kurwa gołąbki XD)</p></li><li><p>Karađorđeva šnicla - zawijany kotlet cielęcy lub wieprzowy nadziewany kajmakiem (ser taki, dewolaj taki, hyhyhy taki).</p></li><li><p>Ajvar - <strong>Węgierski </strong>wpływ chyba, albo <strong>Turecki</strong>,<strong> </strong>pasta z pieczonej papryki i bakłażana, absolutny HITTTT bałkańskiego stołu...</p></li></ul><p></p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              },
+              {
+                "id": 1775770893690,
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto",
+                  "flexWrap": "wrap",
+                  "justifyContent": "center"
+                },
+                "children": [
+                  {
+                    "id": 1775770953628,
+                    "type": "block",
+                    "styles": {
+                      "padding": "10px",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "31%"
+                    },
+                    "children": [
+                      {
+                        "id": 1775770959377,
+                        "type": "image",
+                        "content": "https://balkanyrudej.wordpress.com/wp-content/uploads/2014/10/cevapcici_bosnia_10675837796.jpg",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "height": "180px",
+                          "objectFit": "cover"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": 1775770965719,
+                        "type": "title",
+                        "content": "Ćevapi / Ćevapčići",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "textAlign": "center",
+                          "fontFamily": "'Lato', sans-serif",
+                          "fontSize": "16px"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "e986ffdf-341b-483d-988d-a6b5062e09ea",
+                    "type": "block",
+                    "styles": {
+                      "padding": "10px",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "31%"
+                    },
+                    "children": [
+                      {
+                        "id": "b2c145e5-671a-4f8c-9ddc-d5de91f1b01f",
+                        "type": "image",
+                        "content": "https://myvietkitchen.com/wp-content/uploads/2026/03/Pljeskavica-scaled.webp",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "objectFit": "cover",
+                          "height": "180px"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "ea663216-c61e-45b5-829f-9b03a020cb84",
+                        "type": "title",
+                        "content": "Pljeskavica",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "textAlign": "center",
+                          "fontFamily": "'Lato', sans-serif",
+                          "fontSize": "16px"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "fbd11541-5de6-4cb2-9130-acdb9db93ea9",
+                    "type": "block",
+                    "styles": {
+                      "padding": "10px",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "31%"
+                    },
+                    "children": [
+                      {
+                        "id": "4a5d6a0f-63ce-4d4e-8bc6-91985f88220b",
+                        "type": "image",
+                        "content": "https://www.giverecipe.com/wp-content/uploads/2016/08/Dolmades-in-a-pot.jpg",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "objectFit": "cover",
+                          "height": "180px"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "1613e457-2678-4b2d-baa0-55bbef115166",
+                        "type": "title",
+                        "content": "Sarma",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "textAlign": "center",
+                          "fontFamily": "'Lato', sans-serif",
+                          "fontSize": "16px"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "680beab9-5306-4d8d-b8c0-0bea42bcbc10",
+                    "type": "block",
+                    "styles": {
+                      "padding": "10px",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "31%"
+                    },
+                    "children": [
+                      {
+                        "id": "79fea936-bd2d-4a53-8d6b-0b3cef73ce1f",
+                        "type": "image",
+                        "content": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrujpOaSr_CNVAREoqMLKKTMzPV7HQBcFjKQ&s",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "objectFit": "cover",
+                          "height": "180px"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "f46fd6be-8209-4563-aea3-638a9c621876",
+                        "type": "title",
+                        "content": "Karađorđeva šnicla",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "textAlign": "center",
+                          "fontFamily": "'Lato', sans-serif",
+                          "fontSize": "16px"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "37a45b93-26ec-4d8e-9f9f-8e887f79d93a",
+                    "type": "block",
+                    "styles": {
+                      "padding": "10px",
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "gap": "20px",
+                      "overflowX": "hidden",
+                      "overflowY": "auto",
+                      "width": "31%"
+                    },
+                    "children": [
+                      {
+                        "id": "bbf90324-b06f-481c-86fc-d8f1b2d54d43",
+                        "type": "image",
+                        "content": "https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/ajvar_przepis.jpg",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "objectFit": "cover",
+                          "height": "180px"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "5fe12303-dcf6-414f-b94d-502d84d3c2db",
+                        "type": "title",
+                        "content": "Ajvar",
+                        "styles": {
+                          "position": "relative",
+                          "overflowX": "auto",
+                          "overflowY": "auto",
+                          "textAlign": "center",
+                          "fontFamily": "'Lato', sans-serif",
+                          "fontSize": "16px"
+                        },
+                        "typeOf": "h6",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1775767317562,
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "flex": "1"
+            },
+            "children": [
+              {
+                "id": 1775767385633,
+                "type": "title",
+                "content": "Mihajlo Mitrović",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontFamily": "'Lato', sans-serif",
+                  "fontSize": "24px"
+                },
+                "typeOf": "h4",
+                "children": []
+              },
+              {
+                "id": "ac9a38d1-b3f7-4c5a-91a4-5340e9be2d25",
+                "type": "text",
+                "content": "<p>Architekt, autor, krytyk architektury (ciekawe czy swoje dzieło krytykował cwaniak jebany) z wąsko osadzonymi oczami urodził sie 1 września 1922 roku w Cacak. Bądź co bądź niezły jegomość, odwalił aż 170 obiektów. Jego drugim najbardziej znanym dziełem tuż po Genex Tower to Serbska Cerkiew Prawosławna św. Bazylego Z Ostrogu.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              },
+              {
+                "id": 1775768207980,
+                "type": "image",
+                "content": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D1%81%D1%80%D0%B1%D1%81%D0%BA%D0%BE%D0%B3_%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B3_%D1%85%D1%80%D0%B0%D0%BC%D0%B0_%D0%A1%D0%B2._%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%98%D0%B0_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D1%88%D0%BA%D0%BE%D0%B3%2C_%D0%91%D0%B5%D0%B6%D0%B0%D0%BD%D0%B8%D1%98%D1%81%D0%BA%D0%B0_%D0%9A%D0%BE%D1%81%D0%B0%2C_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B413.jpg/1280px-thumbnail.jpg",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto"
+                },
+                "children": []
+              },
+              {
+                "id": "82c760c0-b2a5-4ed2-93da-c138cd3f396f",
+                "type": "text",
+                "content": "<p>Swoją drogą całkiem ładna ta cerkiew. Bardziej mi się chyba podoba niż ten Genex Tower. Mega spoko jest to okrągłe okno na środku i widzimy buźkę maciejską dla niepoznaki. Tylko pytanie czemu on ma kapelusz <strong>żydowski</strong> na głowie XD Dobra kontynuując miał trochę z górki, gdyż urodził się w zamożnej rodzinie. Jego rodzinka miała hotel w centrum miasta. Jegomość którego opisuje otrzymał w swoim życiu stypendium od ONZ za kontynuację studiów we Francji i Danii. Był też autorem projektów urbanistycznych dla miast Zajecar (zajebał car), Trstenik, Pirot..... Z tego co można o nim wyczytać to pisał cotygodniowe recenzje dla gazety \"Politika\", politik jebany.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              },
+              {
+                "id": "7ff4d446-f5ad-4353-aab9-e40b390b6a1e",
+                "type": "text",
+                "content": "<p>Ta cała gazeta \"Politika\" to nie byle gówno w sumie. Był to serbski dziennik, który działał od 1904 roku!! Jest on zarazem najstarszym i najliczniej sprzedawanym dziennikiem w Europie Południowo-Wschodniej. Wydawany jest po dzień dzisiejszy nieprzerwanie (z wyjątkiem 2-óch wojen) od 25 stycznia 1904 roku.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "justify",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "fontFamily": "'Lato', sans-serif"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
