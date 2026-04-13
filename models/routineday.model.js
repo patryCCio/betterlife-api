@@ -19,6 +19,23 @@ const RoutineDaySchema = new mongoose.Schema(
       ref: "Routine",
       required: true,
     },
+    series: {
+      type: Number,
+      default: 0,
+      required: true,
+    },
+    other_count: {
+      type: Number,
+      default: 0,
+    },
+    series_other_count: {
+      type: Number,
+      default: 0,
+    },
+    last_date: {
+      type: String,
+      required: true
+    }
   },
   {
     timestamps: true,
