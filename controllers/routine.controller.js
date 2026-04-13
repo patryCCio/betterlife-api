@@ -69,3 +69,7 @@ export const deleteRoutine = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+
+export const checkRoutine = async (req, res) => {
+  
+}

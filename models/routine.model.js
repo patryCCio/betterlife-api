@@ -26,7 +26,7 @@ const RoutineSchema = new mongoose.Schema({
   count: {
     type: Number,
     required: true,
-    default: null,
+    default: 0,
   },
 });
 
