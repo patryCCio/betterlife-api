@@ -45,6 +45,10 @@ const createUser = async () => {
   await user.save();
 };
 
+export const auth = async (req, res) => {
+  
+}
+
 export const setPoints = async (req, res) => {
   try {
     const { uuid, pointsToAdd } = req.body;

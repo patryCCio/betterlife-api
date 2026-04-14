@@ -77,7 +77,7 @@ export const checkPoints = async (req, res) => {
         routine_uuid: routine.uuid,
         series: 1,
         last_date: new Date(),
-        other_count: actual_count != count ? actual_count : 0,
+        other_count: actual_count,
         series_other_count: actual_count != count ? 1 : 0,
       })
 
@@ -116,7 +116,7 @@ export const checkPoints = async (req, res) => {
               routine_uuid: routine.uuid
             },
             {
-              $set: { last_date: new Date(), series: d.series + 1, series_other_count: 0 }
+              $set: { last_date: new Date(), series: d.series + 1, series_other_count: 0, other_count: actual_count }
             },
             {
               new: true,
@@ -132,7 +132,7 @@ export const checkPoints = async (req, res) => {
                 routine_uuid: routine.uuid
               },
               {
-                $set: { last_date: new Date(), series_other_count: d.series_other_count + 1 }
+                $set: { last_date: new Date(), series_other_count: d.series_other_count + 1, other_count: actual_count }
               },
               {
                 new: true,
@@ -177,7 +177,7 @@ export const checkPoints = async (req, res) => {
                 routine_uuid: routine.uuid
               },
               {
-                $set: { last_date: new Date(), series_other_count: d.series_other_count + 1, series: d.series + 1 }
+                $set: { last_date: new Date(), series_other_count: d.series_other_count + 1, series: d.series + 1, other_count: actual_count }
               },
               {
                 new: true,
