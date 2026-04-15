@@ -1,0 +1,647 @@
+[
+  {
+    "id": 1,
+    "type": "block",
+    "styles": {
+      "padding": "",
+      "display": "flex",
+      "flexDirection": "column",
+      "position": "relative",
+      "gap": "20px",
+      "overflowX": "hidden",
+      "overflowY": "auto"
+    },
+    "children": [
+      {
+        "id": 1776264419454,
+        "type": "title",
+        "content": "Instagram",
+        "styles": {
+          "position": "relative",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "textAlign": "start",
+          "fontSize": "32px"
+        },
+        "typeOf": "h2",
+        "children": []
+      },
+      {
+        "id": 1776265013722,
+        "type": "block",
+        "styles": {
+          "padding": "",
+          "display": "flex",
+          "flexDirection": "row",
+          "position": "relative",
+          "gap": "20px",
+          "overflowX": "hidden",
+          "overflowY": "auto",
+          "justifyContent": "space-between"
+        },
+        "children": [
+          {
+            "id": 1776265456134,
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "width": "50%"
+            },
+            "children": [
+              {
+                "id": "b0dcd44c-9a11-4da4-b6ef-8df89c5092d3",
+                "type": "title",
+                "content": "Podstawy",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "24px"
+                },
+                "children": [],
+                "typeOf": "h4"
+              },
+              {
+                "id": 1776265027393,
+                "type": "text",
+                "content": "<p>Na instagramie posiadamy 3 rodzaje kont takie jak:</p><ul><li><p>personal account (konto personalne) - konto do użytku osobistego. Jego główną zaletą jest prostota ale nie posiada on dostępu do statystyk (<strong>Insights</strong>) oraz brak narzędzi biznesowych (reklamy, <strong>CTA - Call to Action</strong>)</p></li><li><p>business account (konto biznesowe) - typowe konto dla firm i różnych marek. Posiada dostęp do statystyk, reklam, różnych przycisków <strong>CTA</strong>.</p></li><li><p>creator account (konto twórcy) - najlepsze rozwiązanie ponieważ ma najwięcej możliwości oraz najmniej ograniczeń.</p></li></ul><p></p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "448a0170-552d-4070-a730-17c7ca83de1f",
+                "type": "title",
+                "content": "Filary Instagrama",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "24px"
+                },
+                "children": [],
+                "typeOf": "h4"
+              },
+              {
+                "id": "94cbd3cc-3973-4a51-ae18-1580b86e42c5",
+                "type": "text",
+                "content": "<p>Wielu twórców stosuje technikę czterech filarów na instagramie takich jak:</p><ul><li><p>Entertainment (rozrywka)</p></li><li><p>Inspiration (inspiracja)</p></li><li><p>Educational (edukacja)</p></li><li><p>Promotional (promocja)</p></li></ul><p></p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "0d28009f-3a8b-4312-9f5c-7787223b9da7",
+                "type": "text",
+                "content": "<p><strong>Entertainment </strong>- treści, które mają przyciągnąć uwagę i zatrzymać scrolla na chwile. Celem głównie jest zasięg i viral poprzez formę memów, śmiesznych sytuacji, lekkich vlogów.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "2b0a7ea2-5270-4f83-b303-4a3c3f2ff7a6",
+                "type": "text",
+                "content": "<p><strong>Inspiration </strong>- treści, które mają motywować lub pokazywać lepszą wersję życia. Celem tego filaru jest budowanie emocji i relacji.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "b9d51c88-68b5-4e2d-b779-ed0c497ef141",
+                "type": "text",
+                "content": "<p><strong>Educational </strong>- treści które mają na celu dać konkretną dawkę informacji, wiedzy. Buduje to twój wizerunek, zaufanie i eskperckość. Takimi przykładami mogą być różnego rodzaju tutoriale, tipy, <strong>case study</strong>, wyjaśnienia.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "de11dd42-b40a-4070-af96-257b2c269446",
+                "type": "text",
+                "content": "<p><strong>Promotional </strong>- treści które mają na celu sprzedawać lub kierować do konkretnej oferty. Można to osiągnąć na różne sposoby np. Oferta usług, <strong>CTA</strong>, ebook'i, kursy, opinie klientów. </p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "06ede9a6-2097-4e29-85b9-f73a88bf9562",
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "column",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "width": "50%"
+            },
+            "children": [
+              {
+                "id": 1776265544129,
+                "type": "title",
+                "content": "Co to jest?",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "fontSize": "24px"
+                },
+                "typeOf": "h4",
+                "children": []
+              },
+              {
+                "id": "4183910b-1b8f-4da1-bb4b-396c725d6d4f",
+                "type": "text",
+                "content": "<p><strong>CTA (Call to Action) </strong>- jest to wezwanie do działania, zachęcenie użytkownika żeby coś zrobił np. \"Napisz do nas\", \"Zarezerwuj\", \"Kliknij link w bio\"</p><p></p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "d7de169c-e0f0-49fe-b673-e67aa12c2029",
+                "type": "text",
+                "content": "<p><strong>Insights </strong>- są to statystyki konta i postów. Pokazują m.in:</p><ul><li><p>ile osób zobaczyło post (zasięgi)</p></li><li><p>ile razy był wyświetlony</p></li><li><p>lajki, komentarze, zapisy</p></li><li><p>skąd są odbiorcy (kraj, wiek, płeć)</p></li><li><p>kiedy followersi są aktywni</p></li></ul><p></p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "1920e573-7903-4283-bd09-2e5d6b92e6db",
+                "type": "text",
+                "content": "<p><strong>Filary </strong>- są to główne tematy treści, wokół których buduje się konto, co skutkuje tym, że treści umieszczone na instagramowym koncie stają się spójne, łatwe do zrozumienia.</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              },
+              {
+                "id": "b07b7139-33ca-4070-8e7a-ab4dbc91613f",
+                "type": "text",
+                "content": "<p><strong>Case study </strong>- jest to szczegółowa analiza konkretnego przypadku, w której przedstawiamy co było problemem, jak go rozwiązaliśmy i jaki efekt uzyskaliśmy przez jej rozwiązanie. </p><p>Czyli mamy np. Słaby ruch na IG -&gt; wprowadziliśmy 4 filary -&gt; ruch zwiększony o 200% w ciągu 7 dni  (na podstawie <strong>Insights</strong>).</p>",
+                "styles": {
+                  "position": "relative",
+                  "overflowX": "auto",
+                  "overflowY": "auto",
+                  "textAlign": "start",
+                  "lineHeight": "24px",
+                  "fontSize": "16px",
+                  "width": ""
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1776269365525,
+        "type": "block",
+        "styles": {
+          "padding": "",
+          "display": "flex",
+          "flexDirection": "column",
+          "position": "relative",
+          "gap": "20px",
+          "overflowX": "hidden",
+          "overflowY": "auto"
+        },
+        "children": [
+          {
+            "id": "5963ef91-8fef-4fbe-a126-f5291ee00414",
+            "type": "title",
+            "content": "Jak najlepiej połączyć te filary",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "textAlign": "start",
+              "fontSize": "24px"
+            },
+            "children": [],
+            "typeOf": "h4"
+          },
+          {
+            "id": 1776269454199,
+            "type": "text",
+            "content": "<p>Poprzez treści rozrywkowe, takie jak śmieszne rolki czy vlogi, można dotrzeć do większej liczby odbiorców. Samo dotarcie jednak nie wystarczy - trzeba ich również zatrzymać, budując zainteresowanie i zaangażowanie poprzez treści inspiracyjne. Dzięki nim odbiorcy zaczynają czuć większą więź z twórcą i chętniej śledzą jego działania. Kolejnym krokiem jest budowanie zaufania poprzez treści edukacyjne, takie jak tutoriale czy praktyczne wskazówki, które pokazują wiedzę i kompetencje w danej dziedzinie. W efekcie, gdy odbiorca otrzymuje rozrywkę, inspirację i wartość merytoryczną, naturalnie rośnie jego gotowość do skorzystania z oferty lub zakupu. Sprzedaż staje się wtedy konsekwencją wcześniej zbudowanej relacji, a nie nachalnym działaniem.</p>",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "textAlign": "justify",
+              "lineHeight": "24px",
+              "fontSize": "16px"
+            },
+            "children": []
+          },
+          {
+            "id": "7aa51561-0e94-4f55-a42e-e3c1a6c70121",
+            "type": "text",
+            "content": "<p>Takim bezpiecznym pick'iem dla filarów na instagramie jest podział <strong>6-7:2-3:1</strong>, czyli:</p><ul><li><p>60-70% (Entertainment / Inspiration) MIX</p></li><li><p>20-30% (Educational)</p></li><li><p>10% (Promotional)</p></li></ul><p></p>",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "textAlign": "justify",
+              "lineHeight": "24px",
+              "fontSize": "16px"
+            },
+            "children": []
+          },
+          {
+            "id": "99d1e0bb-a493-41c1-b904-fdcf6443da05",
+            "type": "title",
+            "content": "Zdefiniuj swoją niszę",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "textAlign": "start",
+              "fontSize": "24px"
+            },
+            "children": [],
+            "typeOf": "h4"
+          },
+          {
+            "id": "d504ecbd-dc80-4e54-b3b0-d5485ad681df",
+            "type": "text",
+            "content": "<p>Zadam sobie najpierw takie pytanie. Co to jest <strong>nisza</strong>? Nisza jest to grupa odbiorców, do których chce trafić, którym pomogę rozwiązać konkretny problem, poprzez udostępnienie swoich treści edukacyjnych, inspiracyjnych czy też poprzez udostępnienie danych produktów lub usług. <strong>Dlaczego nisza jest tak ważna? </strong>Definiując swoją niszę jesteśmy w stanie nakierować algorytmy IG na to, do kogo mają trafić. Pozwala nam też określić czy jesteśmy \"atrakcyjnym\" produktem w branży (czyli czy jesteśmy w stanie po prostu zadowolić rzeszę fanów, czy nasze zainteresowania mają jakiś popyt na rynku) oraz czy nie ma przesytu na rynku na nasze usługi. Kolejnym ważnym powodem jest to, że nasz \"content\" nie będzie po prostu chaotyczny, przez co szybciej osiągniemy \"eksperta\". Czyli jak wiemy, że definicja niszy jest mega istotna to warto się zastanowić jak ją zdefiniować. Warto wiedzieć, że <strong>istnieją trzy poziomy niszy</strong>:</p>",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "textAlign": "justify",
+              "lineHeight": "24px",
+              "fontSize": "16px",
+              "margin": "0 0 30px 0"
+            },
+            "children": []
+          },
+          {
+            "id": "b1630f9a-c07f-4c68-b9d4-c12f2e8920fa",
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "row",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "justifyContent": "center",
+              "margin": "0 0 30px 0"
+            },
+            "children": [
+              {
+                "id": "013b21e4-c035-4f28-8d69-d3b702d223fc",
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto",
+                  "width": "100%",
+                  "minWidth": "",
+                  "maxWidth": ""
+                },
+                "children": [
+                  {
+                    "id": "0717e317-f755-4609-bb8c-6be5eb192cac",
+                    "type": "title",
+                    "content": "Nisza Ogólna (Poziom I)",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "fcb74935-efd9-4d4a-a9b9-b5ffdf0fe130",
+                    "type": "text",
+                    "content": "<p>Nisza ogólna obejmuje szeroki obszar działalności. Konkurencja jest tu wysoka, a grupa odbiorców wysoka. Może to być np. \"odzież sportowa\" lub \"marketing internetowy\".</p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "justify",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "8810ef0b-fa01-4171-9cdb-4110c934fc0d",
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto",
+                  "width": "100%",
+                  "maxWidth": ""
+                },
+                "children": [
+                  {
+                    "id": "c5656ed5-fb4e-4ad9-aa29-ec0586c11d89",
+                    "type": "title",
+                    "content": "Subnisza (Poziom II)",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "10625f54-7bd6-4c44-b634-06705a11c3c3",
+                    "type": "text",
+                    "content": "<p>Węższa specjalizacja w ramach niszy ogólnej np. \"odzież do jogi dla kobiet\".</p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "justify",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "87f882c1-c916-44e7-99f5-374716fa50e1",
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto",
+                  "width": "100%",
+                  "maxWidth": ""
+                },
+                "children": [
+                  {
+                    "id": "3f39027a-0c45-4fa5-9990-e63f4100e026",
+                    "type": "title",
+                    "content": "Mikronisza (Poziom III)",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "1abef3a0-72e1-4a42-9f5d-49ad6cce2ee6",
+                    "type": "text",
+                    "content": "<p>Jest to najwęższy poziom, skupiający się na konkretnej grupie lub konkretnej grupie np. \"ekologiczne stroje do jogi z bambusa\".</p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "justify",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "35a29ea7-75b3-4602-8931-bc227f8f445d",
+            "type": "text",
+            "content": "<p>W kontekście instagrama najlepszym wyborem będzie <strong>Mikronisza</strong>. </p>",
+            "styles": {
+              "position": "relative",
+              "overflowX": "auto",
+              "overflowY": "auto",
+              "textAlign": "justify",
+              "lineHeight": "24px",
+              "fontSize": "16px",
+              "margin": "0 0 30px 0"
+            },
+            "children": []
+          },
+          {
+            "id": "a93ca4db-0bbb-4606-a80a-88c6521522fe",
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "row",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "justifyContent": "space-between"
+            },
+            "children": [
+              {
+                "id": "1a9a20b9-0732-4caf-9b93-cd3a81981a97",
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto",
+                  "width": "50%"
+                },
+                "children": [
+                  {
+                    "id": "c5451bcd-3927-418a-8c50-c6f9c987dd25",
+                    "type": "title",
+                    "content": "Od czego zacząć?",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "24px"
+                    },
+                    "children": [],
+                    "typeOf": "h4"
+                  },
+                  {
+                    "id": "3a3ffc13-bbc1-4bf2-bb04-a95996af3d9d",
+                    "type": "title",
+                    "content": "1. Zacznij od siebie",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "f30ed2d3-fec6-441b-a2f9-a353f28df229",
+                    "type": "text",
+                    "content": "<p>Wielu twórców stosuje technikę czterech filarów na instagramie takich jak:</p><ul><li><p>Entertainment (rozrywka)</p></li><li><p>Inspiration (inspiracja)</p></li><li><p>Educational (edukacja)</p></li><li><p>Promotional (promocja)</p></li></ul><p></p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "a87f9271-0334-4682-9b1e-1e43b61d75ca",
+                "type": "block",
+                "styles": {
+                  "padding": "",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "position": "relative",
+                  "gap": "20px",
+                  "overflowX": "hidden",
+                  "overflowY": "auto",
+                  "width": "50%"
+                },
+                "children": [
+                  {
+                    "id": "149cac03-632f-45d1-b18b-592631b71abc",
+                    "type": "title",
+                    "content": "Przykład",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "24px"
+                    },
+                    "typeOf": "h4",
+                    "children": []
+                  },
+                  {
+                    "id": "8fb86a0a-d5fd-4c58-88fc-7dc2c91db3f5",
+                    "type": "title",
+                    "content": "1. Patryk Szczerbiński",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
