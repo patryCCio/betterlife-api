@@ -566,7 +566,7 @@
                   {
                     "id": "3a3ffc13-bbc1-4bf2-bb04-a95996af3d9d",
                     "type": "title",
-                    "content": "1. Zacznij od siebie",
+                    "content": "1. Zainteresowania",
                     "styles": {
                       "position": "relative",
                       "overflowX": "auto",
@@ -580,7 +580,65 @@
                   {
                     "id": "f30ed2d3-fec6-441b-a2f9-a353f28df229",
                     "type": "text",
-                    "content": "<p>Wielu twórców stosuje technikę czterech filarów na instagramie takich jak:</p><ul><li><p>Entertainment (rozrywka)</p></li><li><p>Inspiration (inspiracja)</p></li><li><p>Educational (edukacja)</p></li><li><p>Promotional (promocja)</p></li></ul><p></p>",
+                    "content": "<ul><li><p>Co cię interesuje?</p></li><li><p>Co oglądasz sam z siebie?</p></li><li><p>O czym lubisz rozmawiać?</p></li></ul><p></p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "810ba457-0c9f-4674-9b5e-3cecacb230c0",
+                    "type": "title",
+                    "content": "2. Umiejętności",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "d4a0d1bf-57a0-4b12-9bda-66586cce7bcb",
+                    "type": "text",
+                    "content": "<ul><li><p>Co umiesz lepiej niż początkujący?</p></li><li><p>Czego możesz kogoś nauczyć?</p></li><li><p>Co już robiłeś / testowałeś?</p></li></ul><p></p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "16c1542e-758b-4852-9c9c-697cd61f47cb",
+                    "type": "title",
+                    "content": "3. Popyt (bardzo ważne)",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "8e8e6c0d-9371-4b3b-8c44-a029e1eca7ad",
+                    "type": "text",
+                    "content": "<ul><li><p>Czy ludzie o tym mówią?</p></li><li><p>Czy są problemy w tym temacie?</p></li><li><p>Czy inni twórcy rosną w tym?</p></li></ul><p></p>",
                     "styles": {
                       "position": "relative",
                       "overflowX": "auto",
@@ -625,7 +683,7 @@
                   {
                     "id": "8fb86a0a-d5fd-4c58-88fc-7dc2c91db3f5",
                     "type": "title",
-                    "content": "1. Patryk Szczerbiński",
+                    "content": "1. Zainteresowania",
                     "styles": {
                       "position": "relative",
                       "overflowX": "auto",
@@ -635,6 +693,79 @@
                     },
                     "children": [],
                     "typeOf": "h5"
+                  },
+                  {
+                    "id": "ed0c2da0-9b27-4804-ac52-3abfcf8fbb2e",
+                    "type": "text",
+                    "content": "<ul><li><p>Interesuje się programowaniem stron internetowych, programowaniem aplikacji mobilnych, programowaniem aplikacji desktopowych, modelowaniem 3D, programowaniem gier komputerowych. </p></li></ul><ul><li><p>Ostatnio poszerzam wiedzę w kierunku silnika Unreal Engine, Blendera oraz SEO. </p></li></ul><ul><li><p>O wszystkim w sumie. Zrobiłem się bardzo ciekawski, nurty architektoniczne (brutalizm szczególnie), geopolityka o IT rzadko ktokolwiek chce słuchać bo ich to odstrasza.</p></li></ul><p></p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "0a620d43-6521-4fd5-9e97-c1e78f73e97b",
+                    "type": "title",
+                    "content": "2. Umiejętności",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "ed85abbf-28fa-49a9-82a7-68b4b04b0a80",
+                    "type": "text",
+                    "content": "<ul><li><p>Lepiej niż początkujący na pewno potrafię tworzyć strony 3D, myślę że może to być przyszłość stron.</p></li><li><p>Mogę kogoś nauczyć modelowania 3D, programowania stron od zera (strony SPA z backendem), ewentualnie strony 3D.</p></li><li><p>Wszystko robiłem oprócz tutoriali na YT, ewentualnie rolek na IG. Może fajnie byłoby kręcić rolki z jakimiś protipami.</p></li></ul><p></p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "ca25b4cb-9f6d-4f0e-9acd-0290844ea544",
+                    "type": "title",
+                    "content": "3. Popyt (bardzo ważne)",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "fontSize": "20px"
+                    },
+                    "children": [],
+                    "typeOf": "h5"
+                  },
+                  {
+                    "id": "37ebd318-7376-4a8e-9d56-09e5f12cd8ef",
+                    "type": "text",
+                    "content": "<ul><li><p>Na pewno ludzie czują, że jest to przyszłość. Teraz bardziej kierują się SEO lub GA (Google Analitycs - reklamy)</p></li><li><p>W programowaniu zawsze są problemy, w modelowaniu także.</p></li><li><p>Widziałem pewne kanały ale to bardziej YT. Nie spotkałem się z kontami które stricte 3D stronami by się zajmowały oprócz kanału na YT.</p></li></ul><p></p>",
+                    "styles": {
+                      "position": "relative",
+                      "overflowX": "auto",
+                      "overflowY": "auto",
+                      "textAlign": "start",
+                      "lineHeight": "24px",
+                      "fontSize": "16px",
+                      "width": ""
+                    },
+                    "children": []
                   }
                 ]
               }
