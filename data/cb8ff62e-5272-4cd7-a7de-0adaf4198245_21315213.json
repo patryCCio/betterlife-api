@@ -770,6 +770,21 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "af352406-451a-496b-af49-10ee61e02713",
+            "type": "block",
+            "styles": {
+              "padding": "",
+              "display": "flex",
+              "flexDirection": "row",
+              "position": "relative",
+              "gap": "20px",
+              "overflowX": "hidden",
+              "overflowY": "auto",
+              "justifyContent": "space-between"
+            },
+            "children": []
           }
         ]
       }
