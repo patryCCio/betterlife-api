@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { Category } from "../models/category.model.js";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
@@ -10,15 +11,18 @@ const DEFAULT_ELEMENTS = [
     id: 1,
     type: "block",
     styles: {
-      padding: "10px", display: "flex", flexDirection: "column", position: "relative", gap: "20px", overflowX: "hidden", overflowY: "auto"
+      padding: "10px",
+      display: "flex",
+      flexDirection: "column",
+      position: "relative",
+      gap: "20px",
+      overflowX: "hidden",
+      overflowY: "auto",
     },
     children: [],
   },
 ];
 
-/**
- * GET /knowledge?user_uuid=xxx&project_uuid=yyy
- */
 export const getKnowledge = async (req, res) => {
   try {
     const { user_uuid, project_uuid } = req.query;
@@ -28,7 +32,7 @@ export const getKnowledge = async (req, res) => {
 
     const filePath = path.join(DATA_DIR, `${user_uuid}_${project_uuid}.json`);
 
-    // jeśli plik nie istnieje → tworzymy z DEFAULT_ELEMENTS
+    // jeśli plik nie istnieje → tworzymy z DEFAULT_ELEMENTS432``2
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(
         filePath,
@@ -46,10 +50,6 @@ export const getKnowledge = async (req, res) => {
   }
 };
 
-/**
- * POST /knowledge
- * body: { user_uuid, project_uuid, elements }
- */
 export const saveKnowledge = async (req, res) => {
   try {
     const { user_uuid, project_uuid, elements } = req.body;
@@ -64,5 +64,52 @@ export const saveKnowledge = async (req, res) => {
   } catch (err) {
     console.error(err);
     return res.status(500).json({ error: "Błąd zapisu pliku" });
+  }
+};
+
+export const getKnowledgeCategory = async (req, res) => {
+  const { uuid } = req.params;
+  try {
+    const data = await Category.find({ user_uuid: uuid });
+
+    return res.status(200).json(data);
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: "Something went wrong! Try again later!" });
+  }
+};
+
+export const addKnowledgeCategory = async (req, res) => {
+  const { name, user_uuid } = req.body;
+
+  try {
+    const cat = new Category({
+      user_uuid,
+      name: name.toUpperCase(),
+    });
+
+    await cat.save();
+
+    return res.status(200).json("OK!");
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: "Something went wrong! Try again later!" });
+  }
+};
+
+export const deleteKnowledgeCategory = async (req, res) => {
+  const { uuid } = req.params;
+
+  console.log(uuid);
+
+  try {
+    await Category.findOneAndDelete({ uuid });
+    return res.status(200).json("Ok!");
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: "Something went wrong! Try again later!" });
   }
 };
