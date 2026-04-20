@@ -65,15 +65,6 @@ export const addScore = async (req, res) => {
       });
 
       await score.save();
-
-      if (type == "routine") {
-        const routineDay = new RoutineDay({
-          user_uuid,
-          routine_uuid: additionalInfo.routine_uuid
-        })
-
-        await routineDay.save();
-      }
     }
 
     res.status(200).json("ok!");

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { v4 as uuidv4 } from "uuid";
 
-const CategorySchema = new mongoose.Schema(
+const PostSchema = new mongoose.Schema(
   {
     uuid: {
       type: String,
@@ -41,4 +41,4 @@ const CategorySchema = new mongoose.Schema(
   },
 );
 
-export const Category = mongoose.model("Category", CategorySchema);
+export const Post = mongoose.model("Post", PostSchema);

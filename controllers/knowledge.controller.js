@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { Category } from "../models/category.model.js";
+import { Post } from "../models/posts.model.js";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
@@ -98,6 +99,17 @@ export const addKnowledgeCategory = async (req, res) => {
       .json({ error: "Something went wrong! Try again later!" });
   }
 };
+
+export const getKnowledgePosts = async (req, res) => {
+
+  const { sort, search } = req.params;
+
+  try {
+    const d = await Post.find({ user_uuid });
+  } catch (error) {
+    return res.status(500).json({ message: "Something went wrong! Please try again later!" });
+  }
+}
 
 export const deleteKnowledgeCategory = async (req, res) => {
   const { uuid } = req.params;
