@@ -28,31 +28,65 @@ export const getTodos = async (req, res) => {
     const startOfMonth = new Date(
       date.getFullYear(),
       date.getMonth(),
-      1,
-      0,
-      0,
-      0,
+      1, 0, 0, 0
     );
+
     const endOfMonth = new Date(
       date.getFullYear(),
       date.getMonth() + 1,
-      0,
-      23,
-      59,
-      59,
+      0, 23, 59, 59
     );
 
-    const todos = await Task.find({
+    const tasks = await Task.find({
       user_uuid,
       start: {
         $gte: startOfMonth,
         $lte: endOfMonth,
       },
-    }).sort({ start: 1 });
+    }).lean();
 
-    console.log(todos);
+    const childrenMap = {};
 
-    res.json(todos);
+    tasks.forEach((task) => {
+      if (task.parentId) {
+        if (!childrenMap[task.parentId]) {
+          childrenMap[task.parentId] = [];
+        }
+        childrenMap[task.parentId].push(task);
+      }
+    });
+
+    // 🔹 buduje drzewo + zwraca max level
+    const buildTree = (task, level = 1) => {
+      if (level > 3) return null;
+
+      const children = childrenMap[task.uuid] || [];
+
+      let maxLevel = level;
+
+      const builtChildren = children
+        .map((child) => {
+          const result = buildTree(child, level + 1);
+          if (result) {
+            maxLevel = Math.max(maxLevel, result.maxLevel);
+          }
+          return result;
+        })
+        .filter(Boolean);
+
+      return {
+        ...task,
+        level,
+        maxLevel, // 🔥 tu masz głębokość
+        subtasks: builtChildren,
+      };
+    };
+
+    const roots = tasks.filter((t) => !t.parentId);
+
+    const result = roots.map((task) => buildTree(task));
+
+    res.json(result);
   } catch (err) {
     console.log(err);
     res.status(500).json({ message: err.message });
