@@ -19,17 +19,25 @@ const TaskSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    priority: {
-      type: Number,
-      default: 1,
-    },
-    deadline: {
+    type: {
       type: String,
-      default: null,
+      required: true,
     },
     done: {
       type: Boolean,
       default: false,
+    },
+    color: {
+      type: String,
+      required: true,
+    },
+    start: {
+      type: Date,
+      required: true,
+    },
+    end: {
+      type: Date,
+      required: true,
     },
     parentId: {
       type: String,

@@ -50,7 +50,7 @@ const initServer = async (port) => {
 
 
   // trasy
-  app.use(prefixApi + "todos", todoRoutes);
+  app.use(prefixApi + "tasks", todoRoutes);
   app.use(prefixApi + "user", userRoutes);
   app.use(prefixApi + "awards", awardRoutes);
   app.use(prefixApi + "routines", routineRoutes);
